@@ -1,0 +1,35 @@
+// 변수처리
+// css로 컴파일 되지 않아도 되니까, 파일명에 언더바 붙임
+
+$Primary-LoadingTxt : #3b2a71;
+$Primary-NavTxt : #8762ff;
+$Primary-point1 : #fdc5ff;
+$Primary-point2 : #c871ff;
+
+$white: #ffffff; 
+$black: #222222;
+
+$grayScale22: #222222;
+$grayScale55: #555555;
+$grayScale88: #888888;
+$grayScaleC7: #C7C7C7; 
+$grayScaleD9: #D9D9D9;
+$grayScaleE3: #E3E3E3;
+$grayScaleBW: #F9FAFB;
+
+
+$hd-height: 70px;
+$ft-height: 70px;
+
+$font-size: 16px;
+$font-family: "Pretendard Variable", system-ui, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+
+// 반응형 미디어 쿼리
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1440px;
+
+$bg-img: no-repeat center center;
