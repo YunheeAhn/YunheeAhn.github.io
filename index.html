@@ -3,10 +3,489 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <!-- 오픈그래프 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+        property="og:image"
+        content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <!-- 트위터카드 -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+        name="twitter:image"
+        content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.png" />
+    <!-- reset-css CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&amp;family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- 스와이퍼 -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- fullpage.js -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="jquery.fullpage.css">
+    <script src="scrolloverflow.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/comm.css">
+    <script defer type="text/javascript" src="./assets/js/comm.js"></script>
+
+    <title>YUNHEEVERSE - portfolio</title>
 </head>
+
 <body>
-    포트폴리오 작업중
-    
+    <!-- 헤더 -->
+    <header>
+        <!-- 상단고정 -->
+        <div>
+            <h1>YUNHEEVERSE</h1>
+            <p>2024</p>
+        </div>
+        <!-- 왼쪽 고정 gnb -->
+        <div class="gnb">
+            <div>
+                <img src="#" alt="Nav-IMG">
+                <ul>
+                    <li><a href="">Intro</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">libre</a></li>
+                </ul>>
+            </div>
+        </div>
+    </header>
+<p>----------------------------------------------------------------------------------------------------아래는 고정 뒷배경인데 애니메이션 넣어야 함---------------------------------------------------------------------------</p></p>
+    <!-- 고정 뒷배경 -->
+    <div class="background">
+        <!-- 바탕 -->
+        <div>
+            <div>
+                <img src="#" alt="background-blur">
+            </div>
+            <img src="#" alt="background-color">
+            <img src="#" alt="background-light">
+            <img src="#" alt="background-dust01">
+            <img src="#" alt="background-dust02">
+            <img src="#" alt="background-planet">
+        </div>
+        <div>
+            <div>
+                <img src="#" alt="pin-planet">
+                <img src="#" alt="pin-ringPlanet">
+            </div>
+            <div>
+                <img src="#" alt="turn-sPlanet">
+                <img src="#" alt="turn-mPlanet">
+                <img src="#" alt="turn-RingPlanetLeft">
+                <img src="#" alt="turn-RingPlanetRight">
+            </div>
+        </div>
+        <div class="text">
+            <h2>Hello!</h2>
+            <h3>YUNHEEVERSE</h3>
+        </div>
+
+    </div>
+<p>----------------------------------------------------------------------------------------------------여기부터 메인---------------------------------------------------------------------------</p>
+<p>----------------------------------------------------------------------------------------------------첫번째 페이지:프로필 페이지---------------------------------------------------------------------------</p>
+    <main id="fullpage">
+        <!-- 첫 페이지 -->
+        <section class="section part-1">
+            <!-- 첫페이지 텍스트 구역 -->
+            <div class="section part-1 inner">
+                <!-- -------------------왼쪽 텍스트 구역 시작 -->
+                <div class="inner left-wrap">
+                    <!-- 촤라락 태그 -->
+                    <div class="left-wrap tag__container">
+                        <ul class="tag__container list_item">
+                            <li># 밝은</li>
+                            <li># 꼼꼼한</a></li>
+                            <li># 끈기있는</li>
+                            <li># 도전적인</li>
+                            <li># 소통을 잘하는</li>
+                            <li># 기획적인</li>
+                            <li># 끊임 없이 배우는</li>
+                        </ul>
+                        <h1 class="tag__container desc">웹 퍼블리셔 안윤희 입니다.</h1>
+                    </div>
+                    <!-- 내 사진 -->
+                    <div class="left-wrap profile_img">
+                        <img src="#" alt="myPhoto">
+                    </div>
+                </div> 
+                <!-- -------------------왼쪽 텍스트구역 끝 -->
+
+                <!-- -------------------오른쪽 텍스트구역 시작 -->
+                <div class="inner right-wrap">
+                    <ul class="right-wrap profile_depth1">
+                        <li>
+                            <p>INFO</p>
+                            <ul class="right-wrap profile_depth2">
+                                <li>안윤희 / Ahn Yunhee</li>
+                                <li>1995 . 04 . 28</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>EDUCATION</p>
+                            <ul class="right-wrap profile_depth2">
+                                <li>2024 . 03 UI / UX 웹앱디자인(피그마) & 프론트엔드(React.JS) 과정 수료</li>
+                                <li>2019 . 02 인덕대학교 주얼리 디자인과 전공심화 학사 졸업 </li>
+                                <li>2018 . 02 인덕대학교 주얼리 디자인과 전문학사 졸업 </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>SKILL</p>
+                            <ul class="right-wrap profile_depth2">
+                                <li>html5, CSS3, SCSS, SASS, JavaScript, React.JS, Gnuboard</li>
+                                <li>Photoshop, Illustrator, figma</li>
+                                <li>Github, Git, Slack</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>CERTIFICATE</p>
+                            <ul class="right-wrap profile_depth2">
+                                <li>2024 . 02 웹디자인 기능사 필기 합격 후 실기 준비 중</li>
+                                <li>2024 . 02 정보처리 기능사 필기 합격 후 실기 준비 중</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<p>----------------------------------------------------------------------------------------------------두번째페이지:01번 웹화면미리보기---------------------------------------------------------------------------</p>
+        <!-- 두번째 페이지 -->
+        <section class="section part-2">
+            <div class="section part-2 inner">
+                <img src="#" alt="모니터&앱화면">
+            </div>
+            <!-- 스크롤 하면 작아짐 -->
+        </section>
+<p>----------------------------------------------------------------------------------------------------세번째페이지:01번 설명---------------------------------------------------------------------------</p>
+
+        <!-- 세번째 페이지 -->
+        <section class="section part-3">
+            <div class="section part-3 inner">
+                <!-- -------------------왼쪽 텍스트 구역 시작 -->
+                <div class="inner left-wrap">
+                    <div>
+                        <img src="#" alt="back-web-img">
+                    </div>
+                    <div>
+                        <img src="#" alt="모니터&앱화면">
+                    </div>
+                </div>
+                <!-- -------------------왼쪽 텍스트 구역 끝 -->
+
+                <!-- -------------------오른쪽 텍스트 구역 시작 -->
+                <div class="inner right-wrap">
+                    <p class="right-wrap Num">01</p>
+                    <h3 class="right-wrap Tit" >MEGA ZOO</h3> 
+                    <ul class="right-wrap desc_depth1">
+                        <li>
+                            <p>TYPE</p>
+                            <p>Responsive Web / Re-Design</p>
+                        </li>
+                        <li>
+                            <p>PAGE</p>
+                            <div>
+                                <p>Main + Sub * 1</p>
+                                <p>Index | Company List</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>TOOL</p>
+                            <div>
+                                <p>Visual Studio Code, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                <p>Html, Scss, Sass, JavaScript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PROGRESS</p>
+                            <p>Swiper.JS, AOS, Font Awesome, Git, Github</p>
+                        </li>
+                        <li>
+                            <p>PARTICIPATION RATE</p>
+                            <p>100% ( 개인 작업 )</p>
+                        </li>
+                    </ul>
+                    <p>
+                        메가주 예약 페이지 사이트를 리 디자인 했습니다. 메인페이지와 참가기업 리스트를 볼 수 있는 서브 페이지로 구성되어있습니다.
+                        탭키로 이동 가능 하도록 웹 접근성을 준수 했으며, 다양한 디바이스에서 깨지지 않고 확인 할 수 있도록 브레이크 포인트를 활용
+                        하여 반응형으로 제작 했습니다.
+                    </p>
+                </div>
+                <div class="right-wrap link_wrap">
+                    <ul class="link_list">
+                        <li><a href="#">WEB</a></li>
+                        <li><a href="#">GITHUB</a></li>
+                        <li><a href="#">FIGMA</a></li>
+                    </ul>
+                </div>
+                <!-- -------------------오른쪽 텍스트 구역 끝 -->
+
+            </div>
+        </section>
+
+<p>----------------------------------------------------------------------------------------------------네번째페이지:02번 웹화면미리보기--------------------------------------------------------------------------</p>
+
+        <!-- 네번째 페이지 -->
+        <section class="section part-4">
+            <div class="section part-4 inner">
+                <img src="#" alt="모니터&앱화면">
+            </div>
+        </section>
+
+<p>----------------------------------------------------------------------------------------------------다섯번째페이지:02번 설명--------------------------------------------------------------------------</p>
+
+        <!-- 다섯번째 페이지 -->
+        <section class="section part-5">
+            <div class="section part-5 inner">
+                <!-- -------------------왼쪽 텍스트 구역 시작 -->
+                <div class="inner left-wrap">
+                    <div>
+                        <img src="#" alt="back-web-img">
+                    </div>
+                    <div>
+                        <img src="#" alt="모니터&앱화면">
+                    </div>
+                </div>
+                <!-- -------------------왼쪽 텍스트 구역 끝 -->
+
+                <!-- -------------------오른쪽 텍스트 구역 시작 -->
+                <div class="inner right-wrap">
+                    <p class="right-wrap Num">01</p>
+                    <h3 class="right-wrap Tit" >MEGA ZOO</h3> 
+                    <ul class="right-wrap desc_depth1">
+                        <li>
+                            <p>TYPE</p>
+                            <p>Responsive Web / Re-Design</p>
+                        </li>
+                        <li>
+                            <p>PAGE</p>
+                            <div>
+                                <p>Main + Sub * 1</p>
+                                <p>Index | Company List</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>TOOL</p>
+                            <div>
+                                <p>Visual Studio Code, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                <p>Html, Scss, Sass, JavaScript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PROGRESS</p>
+                            <p>Swiper.JS, AOS, Font Awesome, Git, Github</p>
+                        </li>
+                        <li>
+                            <p>PARTICIPATION RATE</p>
+                            <p>100% ( 개인 작업 )</p>
+                        </li>
+                    </ul>
+                    <p>
+                        메가주 예약 페이지 사이트를 리 디자인 했습니다. 메인페이지와 참가기업 리스트를 볼 수 있는 서브 페이지로 구성되어있습니다.
+                        탭키로 이동 가능 하도록 웹 접근성을 준수 했으며, 다양한 디바이스에서 깨지지 않고 확인 할 수 있도록 브레이크 포인트를 활용
+                        하여 반응형으로 제작 했습니다.
+                    </p>
+                    <div class="right-wrap link_wrap">
+                        <ul class="link_list">
+                            <li><a href="#">WEB</a></li>
+                            <li><a href="#">GITHUB</a></li>
+                            <li><a href="#">FIGMA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -------------------오른쪽 텍스트 구역 끝 -->
+
+            </div>
+        </section>
+
+<p>----------------------------------------------------------------------------------------------------여섯번째페이지:03번 웹화면미리보기--------------------------------------------------------------------------</p>
+
+        <!-- 여섯번째 페이지 -->
+        <section class="section part-6">
+            <div class="section part-6 inner">
+                <img src="#" alt="모니터&앱화면">
+            </div>
+        </section>
+
+<p>----------------------------------------------------------------------------------------------------일곱번째페이지:03번 설정--------------------------------------------------------------------------</p>
+
+        <!-- 일곱번째 페이지 -->
+        <section class="section part-7">
+            <div class="section part-7 inner">
+                <!-- -------------------왼쪽 텍스트 구역 시작 -->
+                <div class="inner left-wrap">
+                    <div>
+                        <img src="#" alt="back-web-img">
+                    </div>
+                    <div>
+                        <img src="#" alt="모니터&앱화면">
+                    </div>
+                </div>
+                <!-- -------------------왼쪽 텍스트 구역 끝 -->
+
+                <!-- -------------------오른쪽 텍스트 구역 시작 -->
+                <div class="inner right-wrap">
+                    <p class="right-wrap Num">01</p>
+                    <h3 class="right-wrap Tit" >MEGA ZOO</h3> 
+                    <ul class="right-wrap desc_depth1">
+                        <li>
+                            <p>TYPE</p>
+                            <p>Responsive Web / Re-Design</p>
+                        </li>
+                        <li>
+                            <p>PAGE</p>
+                            <div>
+                                <p>Main + Sub * 1</p>
+                                <p>Index | Company List</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>TOOL</p>
+                            <div>
+                                <p>Visual Studio Code, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                <p>Html, Scss, Sass, JavaScript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PROGRESS</p>
+                            <p>Swiper.JS, AOS, Font Awesome, Git, Github</p>
+                        </li>
+                        <li>
+                            <p>PARTICIPATION RATE</p>
+                            <p>100% ( 개인 작업 )</p>
+                        </li>
+                    </ul>
+                    <p>
+                        메가주 예약 페이지 사이트를 리 디자인 했습니다. 메인페이지와 참가기업 리스트를 볼 수 있는 서브 페이지로 구성되어있습니다.
+                        탭키로 이동 가능 하도록 웹 접근성을 준수 했으며, 다양한 디바이스에서 깨지지 않고 확인 할 수 있도록 브레이크 포인트를 활용
+                        하여 반응형으로 제작 했습니다.
+                    </p>
+                    <div class="right-wrap link_wrap">
+                        <ul class="link_list">
+                            <li><a href="#">WEB</a></li>
+                            <li><a href="#">GITHUB</a></li>
+                            <li><a href="#">FIGMA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -------------------오른쪽 텍스트 구역 끝 -->
+
+            </div>
+        </section>
+
+<p>----------------------------------------------------------------------------------------------------여덟번째페이지:04번 웹화면미리보기--------------------------------------------------------------------------</p>
+
+        <!-- 여덟번째 페이지 -->
+        <section class="section part-8">
+            <div class="section part-8 inner">
+                <img src="#" alt="모니터&앱화면">
+            </div>
+        </section>
+
+<p>----------------------------------------------------------------------------------------------------아홉번째페이지:04번 설명--------------------------------------------------------------------------</p>
+
+        <!-- 아홉번째 페이지 -->
+        <section class="section part-9">
+            <div class="section part-9 inner">
+                <!-- -------------------왼쪽 텍스트 구역 시작 -->
+                <div class="inner left-wrap">
+                    <div>
+                        <img src="#" alt="back-web-img">
+                    </div>
+                    <div>
+                        <img src="#" alt="모니터&앱화면">
+                    </div>
+                </div>
+                <!-- -------------------왼쪽 텍스트 구역 끝 -->
+
+                <!-- -------------------오른쪽 텍스트 구역 시작 -->
+                <div class="inner right-wrap">
+                    <p class="right-wrap Num">01</p>
+                    <h3 class="right-wrap Tit" >MEGA ZOO</h3> 
+                    <ul class="right-wrap desc_depth1">
+                        <li>
+                            <p>TYPE</p>
+                            <p>Responsive Web / Re-Design</p>
+                        </li>
+                        <li>
+                            <p>PAGE</p>
+                            <div>
+                                <p>Main + Sub * 1</p>
+                                <p>Index | Company List</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>TOOL</p>
+                            <div>
+                                <p>Visual Studio Code, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                <p>Html, Scss, Sass, JavaScript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PROGRESS</p>
+                            <p>Swiper.JS, AOS, Font Awesome, Git, Github</p>
+                        </li>
+                        <li>
+                            <p>PARTICIPATION RATE</p>
+                            <p>100% ( 개인 작업 )</p>
+                        </li>
+                    </ul>
+                    <p>
+                        메가주 예약 페이지 사이트를 리 디자인 했습니다. 메인페이지와 참가기업 리스트를 볼 수 있는 서브 페이지로 구성되어있습니다.
+                        탭키로 이동 가능 하도록 웹 접근성을 준수 했으며, 다양한 디바이스에서 깨지지 않고 확인 할 수 있도록 브레이크 포인트를 활용
+                        하여 반응형으로 제작 했습니다.
+                    </p>
+                    <div class="right-wrap link_wrap">
+                        <ul class="link_list">
+                            <li><a href="#">WEB</a></li>
+                            <li><a href="#">GITHUB</a></li>
+                            <li><a href="#">FIGMA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -------------------오른쪽 텍스트 구역 끝 -->
+
+            </div>
+        </section>
+
+<p>----------------------------------------------------------------------------------------------------열번째페이지:컨택트--------------------------------------------------------------------------</p>
+
+        <!-- 열번째 페이지 -->
+        <section class="section part-10">10
+        </section>
+    </main>
+
+    <script>
+        new fullpage("#fullpage", {
+            navigation: true,
+            navigationTooltips: [
+                "Intro",
+                "Introduce",
+                "Publishing",
+                "Publishing",
+                "Publishing",
+                "Publishing",
+                "Footer",
+            ],
+            scrollingSpeed: 1500,
+        });
+    </script>
+
 </body>
 </html>
