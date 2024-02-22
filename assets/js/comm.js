@@ -1,46 +1,34 @@
-// 스와이퍼 js 샘플
-new Swiper(".swiper-container", {
-    direction: "vertical", // 수직 슬라이드
-    autoplay: true, // 자동 재생 여부
-    loop: true, // 반복 재생 여부
+// 준비 이벤트
+document.addEventListener('DOMContentLoaded', function() {
+    // 뒷 배경 이미지들 무한 둥둥
+    const updown = document.querySelectorAll('.up');
+
+    gsap.to(updown, {
+        duration: .9,
+        y: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    }); 
+
+    const downup = document.querySelectorAll('.down');
+    gsap.to(downup, {
+        duration: .9,
+        y: -3,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
     });
 
-
-
-    $(function() {
-        var page = $('.fullpage').fullpage();
+    // 뒷 배경 라이트 무한 회전
+    const curlRight = document.querySelector('.background-light');
+    gsap.to(curlRight, {
+        duration : 5,
+        rotate: 360,
+        repeat: -1,
+        ease: "power1.inOut"
     })
 
-    $(function() {
-        var page = $('.fullpage').fullpage({
-     
-            // 1. 네비게이션 보이기
-            navigation : true,
-     
-            // 2. 네비게이션 위치 지정
-            navigationPosition : 'left',
-     
-            // 3. 각 섹션의 배경색상 지정 (6자의 핵사코드 작성가능)
-            sectionsColor : ['pink', 'yellow', '#efefef'],
-        });
-    })
+    // 스크롤시 위치 이동
 
-
-    $(function() {
-        var page = $('.fullpage').fullpage({
-     
-            // menu에 대한 옵션 설정
-            menu : '.gnb',
-            anchors : ['section1', 'section2', 'section3'],
-     
-        });
-    })
-
-    $(function() {
-        var page = $('.fullpage').fullpage({
-     
-            // 스크롤 허용을 원하는 요소의 클래스를 적어줌
-            normalScrollElements: '.scroll'
-     
-        });
-    })
+});
