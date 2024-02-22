@@ -2,9 +2,144 @@
 // 컴파일 하는걸 방지 하려면 '_??.scss' 처럼 앞에 언더바 넣으면 컴파일 안됨
 
 @import 'variables','mixins', 'fonts', 'resets' ;
-// btn style
 
 // layout
+body {
+    position: relative;
+    height: 100vh;
+}
+#header {
+    position: fixed;
+    background: #ffffff70;
+    
+    width: 100%;
+    height: $hd-height;
+
+    .my-header {
+        z-index: 10000;
+        max-width: 1440px;
+
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: $hd-height;
+
+        h1, p {
+            background: linear-gradient(to right, $Primary-LoadingTxt, $Primary-point2, $Primary-point1, $Primary-NavTxt,$Primary-LoadingTxt );
+            color: transparent;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include SemiBold-36;
+            font-weight: 900;
+
+            .gradBack {
+                width: 100px;
+                height: 100px;
+                border-radius: 5rem;
+                background: linear-gradient(to right, $Primary-LoadingTxt, $Primary-point2, $Primary-point1, $Primary-NavTxt,$Primary-LoadingTxt );
+                transform: rotate(45deg);
+            }
+        }
+        #gnb {
+            .gnb-inner {
+                .gnb_list {
+                    display: flex;
+                }
+            }
+        }   
+    
+    }
+}
+.background {
+    // position: fixed;
+    // background: url(../../images/background.png) $bg-img;
+    
+    z-index: -1;
+    position: fixed;
+    // top: -60px;
+
+    background: url(../../images/background.png);
+    background-size: contain;
+    
+    width: 100%;
+    height: 100%;
+
+    .background__fixed {
+        .background-color {
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+        }
+        .background-light {
+            background: url(../../images/light.png) $bg-img ;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            bottom: -20%;
+            left: -30%;
+
+            animation: rotate_image 6s linear infinite;
+            transform-origin: center center;
+            }
+            @keyframes rotate_image {
+                100% {
+                    transform: rotate(360deg);
+            }
+        }
+        .dust01 {
+            background: url(../../images/dust.png) $bg-img ;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.text {
+    .text-wrap {
+        display: flex;
+        gap: 10px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        @include ExtraBold-60;
+        color: $Primary-LoadingTxt;
+        text-decoration: 5px $white;
+
+        z-index: 10;
+
+        .scale {
+            position: absolute;
+            gap: 10px;
+
+            z-index: 9;
+
+            display: flex;
+
+            @include ExtraBold-60;
+            color: $white;
+            
+        }
+    }
+}
+#fullpage {
+    .section{
+        
+    }
+}
+
 
 
 // 미디어쿼리
