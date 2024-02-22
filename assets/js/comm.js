@@ -27,8 +27,27 @@ document.addEventListener('DOMContentLoaded', function() {
         rotate: 360,
         repeat: -1,
         ease: "power1.inOut"
-    })
+    });
 
-    // 스크롤시 위치 이동
+    // 타이핑 효과
 
+    // const typingTxt = document.querySelector('.text-wrap');
+    // const text = "Hello! YUNHEEVERSE"; // 여기에 출력할 텍스트를 지정하세요
+    // let index = 0;
+
+    // gsap.timeline({
+    //     duration: 4,
+    //     repeat: -1,
+    //     repeatDelay: 1,
+    //     yoyo: true
+    // })
+    // .to({}, {
+    //     duration: 4,
+    //     onUpdate: function() {
+    //         if (index < text.length) {
+    //             typingTxt.textContent += text.charAt(index);
+    //             index++;
+    //         }
+    //     }
+    // });
 });
