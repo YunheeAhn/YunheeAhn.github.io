@@ -283,8 +283,28 @@ body {
     }
 }
 #fullpage {
-    .section{
+    position: relative;
+    #About{
+        width: 1182px;
+        height: 700px;
+        .inner {
+            .fp-tableCell {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+
+                position: absolute;
+                top: 50%;
+                left: 50% ;
+
+                transform: translate(-50%, -50%);
+
+
+            }
+        }
         
+        .part-2{}
+        .part-3{}
     }
 }
 
