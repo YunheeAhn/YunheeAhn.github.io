@@ -1,5 +1,26 @@
 // 준비 이벤트
 document.addEventListener('DOMContentLoaded', function() {
+    // 타이핑 효과
+    var strings = ["WELCOME!", "YUNHEEVERSE"];
+    var el = document.getElementById('str');
+
+    function animateStrings(index) {
+        var string = strings[index];
+        var str = string.split("");
+        var interval = setInterval(function () {
+            if (str.length > 0) {
+                el.innerHTML += str.shift();
+            } else {
+                clearInterval(interval);
+                setTimeout(function() {
+                    el.innerHTML = ''; // 이전 문자열 삭제
+                    animateStrings((index + 1) % strings.length); // 다음 문자열로 이동
+                }, 1000); // 다음 문자열까지의 지연시간 (1초)
+            }
+        }, 90);
+    }
+    animateStrings(0);
+
     // 풀페이지
     new fullpage("#fullpage", {
         navigation: true,
@@ -21,12 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         jQuery(".section.active [data-aos]").addClass("aos-animate");
         },
     });
-
-
-    // 행성 움직이기(스크롤트리거)
-    
-    // 스와이퍼
-    
 
     // 뒷 배경 이미지들 무한 부유
     const updown = document.querySelectorAll('.up');
@@ -71,27 +86,40 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 0.1,
     })
 
+    // 행성 움직이기(스크롤트리거)
+    // 부드럽게
+    // const lenis = new Lenis()
+    // lenis.addEventListener("scroll", (e) => {
+    //     console.log(e)
+    // });
+    
+    // function raf(time) {
+    //     lenis.raf(time);
+    //     requestAnimationFrame(raf);
+    // }
+    requestAnimationFrame(raf);
+    
+    // 스크롤트리거 플러그인 사용 선언
+    gsap.registerPlugin(ScrollTrigger);
 
-    // 타이핑 효과
-    var strings = ["WELCOME!", "YUNHEEVERSE"];
-    var el = document.getElementById('str');
+    gsap.to('.background', {
+        ScrollTrigger: {
+            trigger: '#Intro',
+            Stat: 'top',
+            end: "100% 100%",
+            scrub: 1,
+            markers: false,
+        },
+        duration: 1,
+    })
 
-    function animateStrings(index) {
-        var string = strings[index];
-        var str = string.split("");
-        var interval = setInterval(function () {
-            if (str.length > 0) {
-                el.innerHTML += str.shift();
-            } else {
-                clearInterval(interval);
-                setTimeout(function() {
-                    el.innerHTML = ''; // 이전 문자열 삭제
-                    animateStrings((index + 1) % strings.length); // 다음 문자열로 이동
-                }, 1000); // 다음 문자열까지의 지연시간 (1초)
-            }
-        }, 90);
-    }
-    animateStrings(0);
+    let ScrollTrigger = gsap.to(".turn-sPlanet",{x:"-100px", duration: 1.5});
 
+    // 스와이퍼
+    
+
+    
+
+    
     
 });
