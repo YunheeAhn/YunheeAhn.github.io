@@ -1,7 +1,7 @@
 // scss로 만들면 컴퓨터는 인식을 못하기 때문에 css로 컴파일 함
 // 컴파일 하는걸 방지 하려면 '_??.scss' 처럼 앞에 언더바 넣으면 컴파일 안됨
 
-@import 'variables','mixins', 'fonts', 'resets' ;
+@import 'variables','mixins', 'fonts', 'resets','fullpage','swiper' ;
 
 // layout
 body {
@@ -266,7 +266,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        // transform: translateX(-50%);
+        transform: translateX(-50%);
 
         @include ExtraBold-60;
         font-size: 180px;
@@ -276,10 +276,10 @@ body {
         z-index: 10;
 
         text-shadow: 
-            -10px -10px 0 $white, 
-            10px -10px 0 $white,
-            -10px  10px 0 $white, 
-            10px  10px 0 $white;
+            -8px -8px 0 $white, 
+            8px -8px 0 $white,
+            -8px  8px 0 $white, 
+            8px  8px 0 $white;
     }
 }
 #fullpage {
