@@ -87,9 +87,9 @@
             <div class="background-blur down"></div>
             <div class="background-color up"></div>
             <div class="background-light down"></div>
-            <div class="background-dust01 up"></div>
-            <div class="background-dust02 down"></div>
-            <div class="background-dust03 up"></div>
+            <div class="background-dust01 twinkle"></div>
+            <div class="background-dust02 twinkle"></div>
+            <div class="background-dust03 twinkle"></div>
             <div class="background-wave down"></div>
             <div class="background-planet up"></div>
         </div>
@@ -104,22 +104,25 @@
             <div class="turn-mPlanet down" ></div>
             <div class="turn-RingPlanetLeft up"></div>
             <div class="turn-RingPlanetRight down"></div>
-            <div class="background-dust04 up"></div>
-            <div class="background-dust05 down"></div>
+            <div class="background-dust04 twinkle"></div>
+            <div class="background-dust05 twinkle"></div>
         </div>
 
     </div>
 
-    <div class="text">
-        <div class="text-wrap" id="str"></div>
-    </div>
+    
 <!-- <p>----------------------------------------------------------------------------------------------------여기부터 메인---------------------------------------------------------------------------</p>
 <p>----------------------------------------------------------------------------------------------------첫번째 페이지:프로필 페이지---------------------------------------------------------------------------</p> -->
     <main id="fullpage">
+        <section id="Intro" class="section part-0 active" data-tooltip="Intro" data-anchor="intro">
+            <div class="text"  data-aos="zoom-in" data-aos-once="true" >
+                <div class="text-wrap" id="str"></div>
+            </div>
+        </section>
         <!-- 첫 페이지 -->
         <section id="About" class="section part-1 active" data-tooltip="Profile" data-anchor="profile" >
             <!-- 첫페이지 텍스트 구역 -->
-            <div class="section part-1 inner">
+            <div class="section part-1 inner" data-aos="fade-up" data-aos-once="true"  >
                 <!-- -------------------왼쪽 텍스트 구역 시작 -->
                 <div class="inner left-wrap">
                     <!-- 촤라락 태그 -->
@@ -479,7 +482,7 @@
                                 </div>
                             </section>
                         </div>
-
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
         </section>

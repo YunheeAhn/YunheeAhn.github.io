@@ -1,11 +1,11 @@
 // 준비 이벤트
 document.addEventListener('DOMContentLoaded', function() {
+    // 풀페이지
     new fullpage("#fullpage", {
         navigation: true,
-        navigationTooltips: ['Profile','Project','Contact'],
-        anchor: ['profile','project','contact'],
-        scrollingSpeed: 800,
-        scrollOverflow: true,
+        navigationTooltips: ['Intro','Profile','Project','Contact'],
+        anchor: ['intro','profile','project','contact'],
+        scrollingSpeed: 1000,
         bigSectionsDestination: top,
         responsiveWidth: 1025,
         onLeave: function () {
@@ -22,47 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-    // swiper.js
-    var length = $(".part-2 .swiper .swiper-wrapper .swiper-slide").length;
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        threshold: 100,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
-        mousewheel: true,
-        on: {
-            slideChange: function () {
-                var idx = this.activeIndex;
-                // 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
-                if (this.activeIndex != 0 && idx != length)
-                    $.fn.fullpage.setAllowScrolling(false);
-                if (length == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false); //슬라이드가 2개밖에 없을때
-                // console.log('즉시 : ' + idx);
-                },
-            slideChangeTransitionEnd: function () {
-                var idx = this.activeIndex;
-                // 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
-                if (idx == 0 || idx >= length - 1)
-                    $.fn.fullpage.setAllowScrolling(true);
-                // console.log('전환후 : ' + idx);
-                },
-            touchMove: function (e) {
-                var startY = e.touches.startY;
-                setTimeout(function () {
-                    if (startY > e.touches.currentY) swiper.slideNext();
-                    else swiper.slidePrev();
-                    }, 100);
-                },
-            }
-        });
-        swiper();
-        
-        
-    // 뒷 배경 이미지들 무한 둥둥
-    const updown = document.querySelectorAll('.up');
 
+    // 행성 움직이기(스크롤트리거)
+    
+    // 스와이퍼
+    
+
+    // 뒷 배경 이미지들 무한 부유
+    const updown = document.querySelectorAll('.up');
     gsap.to(updown, {
         duration: .9,
         y: 3,
@@ -89,6 +56,22 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "power1.inOut"
     });
 
+    // 먼지 깜빡임
+    const tl = gsap.timeline({
+        repeat: -1,
+        repeatDelay: 1,
+    })
+    const twinkleDust = document.querySelectorAll('.twinkle');
+    tl.to(twinkleDust, {
+        opacity: 0,
+        duration: 0.1
+    });
+    tl.to(twinkleDust, {
+        opacity: 1,
+        duration: 0.1,
+    })
+
+
     // 타이핑 효과
     var strings = ["WELCOME!", "YUNHEEVERSE"];
     var el = document.getElementById('str');
@@ -108,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 90);
     }
-
     animateStrings(0);
+
+    
 });
