@@ -116,7 +116,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let ScrollTrigger = gsap.to(".turn-sPlanet",{x:"-100px", duration: 1.5});
 
     // 스와이퍼
-    
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+            },
+        });
 
     
 

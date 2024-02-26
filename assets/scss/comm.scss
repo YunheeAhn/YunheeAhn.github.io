@@ -10,13 +10,17 @@ body {
 }
 #header {
     position: fixed;
+    top: 0;
+
+    z-index: 100000;
+    
     background: #ffffff70;
     
     width: 100%;
     height: $hd-height;
 
     .my-header {
-        z-index: 10000;
+        
         max-width: 1440px;
 
         margin: 0 auto;
@@ -55,13 +59,11 @@ body {
     
     }
 }
+
 .background {
-    // position: fixed;
-    // background: url(../../images/background.png) $bg-img;
-    
-    z-index: -2;
     position: fixed;
-    // top: -60px;
+
+    position: fixed;
 
     background: url(../../images/background.png);
     background-size: contain;
@@ -70,24 +72,16 @@ body {
     height: 100%;
 
     .background__fixed {
+        z-index: -10;
+
         width: 100%;
         height: 100%;
 
         position: fixed;
-        .background-blur {
-            width: 100%;
-            height: 100%;
 
-            background: #ffffff70;
-
-            display: none;
-
-            .active {
-                display: block;
-            }
-        }
-        
         .background-color {
+            z-index: -10;
+
             width: 100%;
             height: 100%;
 
@@ -95,6 +89,8 @@ body {
             top: 0;
         }
         .background-light {
+            z-index: -10;
+
             background: url(../../images/light.png) $bg-img ;
             background-size: contain;
             width: 100%;
@@ -107,6 +103,8 @@ body {
             transform-origin: center center;
         }
         .background-dust01 {
+            z-index: -10;
+
             background: url(../../images/dust.png) $bg-img ;
             background-size: cover;
             width: 70%;
@@ -118,6 +116,8 @@ body {
 
         }
         .background-dust02 {
+            z-index: -10;
+
             background: url(../../images/dust.png) $bg-img ;
             background-size: cover;
             width: 60%;
@@ -132,6 +132,8 @@ body {
             transform: rotate(45deg);
         }
         .background-dust03 {
+            z-index: -10;
+
             background: url(../../images/dust.png) $bg-img ;
             background-size: cover;
             width: 40%;
@@ -146,6 +148,8 @@ body {
             transform: rotate(-30deg);
         }
         .background-wave {
+            z-index: -10;
+
             background: url(../../images/wave.png) $bg-img ;
             background-size: contain;
             width: 80%;
@@ -157,6 +161,8 @@ body {
             left: 0;
         }
         .background-planet {
+            z-index: -10;
+
             background: url(../../images/planet3.png) $bg-img ;
             background-size: contain;
             width: 100%;
@@ -169,7 +175,11 @@ body {
         }
     }
     .blackground__topPlanet {
+        z-index: -6;
+
         .pin-planet {
+            z-index: -6;
+
             background: url(../../images/planet2.png) $bg-img ;
             background-size: contain;
             width: 80%;
@@ -180,6 +190,8 @@ body {
             left: -40%;
         }
         .pin-ringPlanet {
+            z-index: -6;
+
             background: url(../../images/planet4.png) $bg-img ;
             background-size: contain;
             width: 50%;
@@ -191,7 +203,11 @@ body {
         }
     }
     .background__turnning {
+        z-index: -3;
+
         .turn-sPlanet {
+            z-index: -3;
+
             background: url(../../images/planet3S.png) no-repeat ;
             background-size: contain;
             width: 10%;
@@ -202,6 +218,8 @@ body {
             left: 22%;
         }
         .turn-mPlanet {
+            z-index: -3;
+
             background: url(../../images/planet2.png) no-repeat ;
             background-size: contain;
             width: 18%;
@@ -212,6 +230,8 @@ body {
             left: 32%;
         }
         .turn-RingPlanetLeft {
+            z-index: -3;
+
             background: url(../../images/planet5.png) no-repeat ;
             background-size: contain;
             width: 72%;
@@ -222,6 +242,8 @@ body {
             left: -5%;
         }
         .turn-RingPlanetRight {
+            z-index: -3;
+
             background: url(../../images/planet1.png) no-repeat ;
             background-size: contain;
             width: 120%;
@@ -232,6 +254,8 @@ body {
             right: -70%;
         }
         .background-dust04 {
+            z-index: -3;
+
             background: url(../../images/dust.png) $bg-img ;
             background-size: cover;
             width: 50%;
@@ -244,6 +268,8 @@ body {
             transform: rotate(20deg);
         }
         .background-dust05 {
+            z-index: -3;
+
             background: url(../../images/dust.png) $bg-img ;
             background-size: cover;
             width: 60%;
@@ -254,6 +280,24 @@ body {
             right: -13%;
             
             transform: rotate(-90deg);
+        }
+    }
+    .background-blur {
+        width: 100%;
+        height: 100%;
+    
+        background: #ffffff70;
+    
+        z-index: -10;
+    
+        display: none;
+    
+        .active {
+            display: block;
+    
+            position: fixed;
+            bottom: 0;
+            top: auto;
         }
     }
 }
@@ -282,29 +326,140 @@ body {
             8px  8px 0 $white;
     }
 }
+
+
 #fullpage {
-    position: relative;
-    #About{
-        width: 1182px;
-        height: 700px;
+    #About {
+        padding-top: 70px;
         .inner {
-            .fp-tableCell {
+            display: flex;
+            justify-content: space-between;
+            
+            width: 80%;
+            
+            margin: 0 auto;
+            
+            gap: 30px;
+
+            .left-wrap {
+                width: 50%;
                 display: flex;
-                flex-direction: row;
-                gap: 30px;
+                flex-direction: column-reverse;
+                position: relative;
 
-                position: absolute;
-                top: 50%;
-                left: 50% ;
+                .tag {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    height: 160px;
+    
+                    width: 100%;
 
-                transform: translate(-50%, -50%);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @include SemiBold-36;
+
+                    .tag__container {
+                        width: 100%;
+                        height: 160px;
+
+                        overflow: hidden;
+                        height: 40px;
+                        padding: 0 40px;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
 
 
+                        &::before {
+                            content: '[';
+                            left: 30px;
+                        }
+                        &::after {
+                            content: ']';
+                            right: 30px;
+                        }
+
+                        &:after,
+                        &:before {
+                            position: absolute;
+                            top: 0;
+
+                            -webkit-animation: Yrotator 6s infinite alternate;
+                            animation: Yrotator 6s infinite alternate;
+                        }
+                        @keyframes Yrotator {
+                            0% {
+                                -webkit-filter: hue-rotate(0deg);
+                                filter: hue-rotate(0deg);
+                            }
+                        
+                            100% {
+                                -webkit-filter: hue-rotate(360deg);
+                                filter: hue-rotate(360deg);
+                            }
+                        }
+
+                        .tag__container__list {
+                            margin-top: 0;
+                            padding-left: 0;
+                            text-align: center;
+                            list-style: none;
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            animation-name: change;
+                            animation-duration: 9s;
+                            animation-iteration-count: infinite;
+
+                            @keyframes change {
+                                0%, 12.66%, 100% {
+                                    transform: translate3d(0, 0, 0);
+                                }
+                                16.66%, 29.32% {
+                                    transform: translate3d(0, -25%, 0);
+                                }
+                                33.32%, 45.98% {
+                                    transform: translate3d(0, -50%, 0);
+                                }
+                                49.98%, 62.64% {
+                                    transform: translate3d(0, -75%, 0);
+                                }
+                                66.64%, 79.3% {
+                                    transform: translate3d(0, -50%, 0);
+                                }
+                                83.3%, 95.96% {
+                                    transform: translate3d(0, -25%, 0);
+                                }
+                            }
+
+                            &.tag__container__list__item {
+                                line-height: 40px;
+                                margin: 0;
+
+                            }
+                    }
+                    .tag__containe__desc {
+                        width: 100&;
+
+                        margin-top: 20px;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+                }
+                
+            }
+            }
+            .right-wrap {
+                width: 50%;
             }
         }
-        
-        .part-2{}
-        .part-3{}
     }
 }
 
