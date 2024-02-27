@@ -85,33 +85,24 @@ document.addEventListener('DOMContentLoaded', function() {
         opacity: 1,
         duration: 0.1,
     })
-
-    // 행성 움직이기(스크롤트리거)
-    // 부드럽게
-    // const lenis = new Lenis()
-    // lenis.addEventListener("scroll", (e) => {
-    //     console.log(e)
-    // });
-    
-    // function raf(time) {
-    //     lenis.raf(time);
-    //     requestAnimationFrame(raf);
-    // }
     requestAnimationFrame(raf);
     
+
     // 스크롤트리거 플러그인 사용 선언
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('.background', {
-        ScrollTrigger: {
-            trigger: '#Intro',
-            Stat: 'top',
-            end: "100% 100%",
-            scrub: 1,
-            markers: false,
-        },
-        duration: 1,
-    })
+    gsap.to('.background-blur', {
+        opacity: 1, // 초기 투명도 설정
+        scrollTrigger: {
+            trigger: '#fullpage',
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: true // 스크롤시 요소가 스크롤 속도에 따라 부드럽게 따라가도록 함
+        }
+    });
+    
+
+    
 
     let ScrollTrigger = gsap.to(".turn-sPlanet",{x:"-100px", duration: 1.5});
 
@@ -122,9 +113,32 @@ document.addEventListener('DOMContentLoaded', function() {
             dynamicBullets: true,
             },
         });
-
-    
-
-    
-    
 });
+
+// $(document).ready(function () {
+//     // fullpage
+//     $("#fullpage").fullpage({
+//       responsiveWidth: 480,
+//     });
+//     $("#fullpage").fullpage({
+//       scrollingSpeed: 700,
+//       // scrollBar: true,
+//       onLeave: function (origin, destination, direction) {
+//         // 빠른전환으로 이벤트중복시 fullpage와 swiper전환시점 분리막기
+//         $("#fullpage").on("scroll touchmove mousewheel", function (event) {
+//           event.preventDefault();
+//           event.stopPropagation();
+//           return false;
+//         });
+//         swiper.mousewheel.disable();
+//       },
+//       afterLoad: function (anchorLink, index) {
+//         // 전환이 끝난후 이벤트풀기
+//         $("#fullpage").off("scroll mousewheel");
+//         if (!$(".fp-completely .swiper-wrapper").length > 0)
+//           $("#fullpage").off("touchmove"); // 모바일분기
+//         if (swiper) swiper.mousewheel.enable();
+//         if (!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); // 슬라이드 섹션을 벗어나면 휠풀어주기
+//       },
+//     });
+// })
