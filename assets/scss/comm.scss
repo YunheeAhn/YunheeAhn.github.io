@@ -485,6 +485,59 @@ body {
             }
         }
     }
+    #Contact {
+        .inner {
+            display: flex;
+
+            margin: 0 auto;
+
+            .left-wrap {
+
+                .contact__container {
+                    width: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .contact__container__topTxt {
+                        @include Bold-24;
+                        width: 100%;
+                        
+                        p {
+                            width: 100%;
+
+                            display: flex;
+
+                            &::before {
+                                content: '\f111';
+                                display: block;
+                                font-weight: 900;
+                                width: 10px;
+                                height: 10px;
+
+                            }
+
+                            &::after {
+                                content: '\f111';
+                                display: block;
+                                font-weight: 900;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                    .contact__container__bottomTxt {
+                        margin-top: 200px;
+                    }
+                }
+            }
+            .right-wrap {
+
+            }
+
+        }
+    }
 }
 
 
