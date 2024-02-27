@@ -511,6 +511,7 @@ body {
 
                             &::before {
                                 content: '\f111';
+                                font-family: "Font Awesome 6 Pro";
                                 display: block;
                                 font-weight: 900;
                                 width: 10px;
@@ -520,6 +521,7 @@ body {
 
                             &::after {
                                 content: '\f111';
+                                font-family: "Font Awesome 6 Pro";
                                 display: block;
                                 font-weight: 900;
                                 width: 20px;
