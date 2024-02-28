@@ -495,11 +495,13 @@ body {
             backdrop-filter: blur(50px);
             border-radius: 15px;
 
-            
             width: 80%;
             height: 600px;
 
+            gap: 30px;
+
             .left-wrap {
+                width: 50%;
                 height: 100%;
 
                 background: none;
@@ -509,7 +511,6 @@ body {
                 padding-left: 90px;
                 padding-bottom: 90px;
 
-                margin-right: 10px;
                 .contact__container {
                     width: 100%;
 
@@ -625,6 +626,7 @@ body {
                 background: none;
                 backdrop-filter: none;
 
+                width: 50%;
                 height: 100%;
 
                 padding-top: 90px;
