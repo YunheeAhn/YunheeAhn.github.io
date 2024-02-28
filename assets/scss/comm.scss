@@ -1,7 +1,7 @@
 // scss로 만들면 컴퓨터는 인식을 못하기 때문에 css로 컴파일 함
 // 컴파일 하는걸 방지 하려면 '_??.scss' 처럼 앞에 언더바 넣으면 컴파일 안됨
 
-@import 'variables','mixins', 'fonts', 'resets','fullpage','swiper' ;
+@import 'variables','mixins', 'fonts', 'resets','fullpage' ;
 
 // layout
 body {
@@ -488,11 +488,28 @@ body {
     #Contact {
         .inner {
             display: flex;
-
+            
             margin: 0 auto;
 
-            .left-wrap {
+            background: #ffffff30;
+            backdrop-filter: blur(50px);
+            border-radius: 15px;
 
+            
+            width: 80%;
+            height: 600px;
+
+            .left-wrap {
+                height: 100%;
+
+                background: none;
+                backdrop-filter: none;
+
+                padding-top: 90px;
+                padding-left: 90px;
+                padding-bottom: 90px;
+
+                margin-right: 10px;
                 .contact__container {
                     width: 100%;
 
@@ -500,33 +517,49 @@ body {
                     flex-direction: column;
                     justify-content: space-between;
 
+                    padding: 0;
+
                     .contact__container__topTxt {
                         @include Bold-24;
                         width: 100%;
                         
                         p {
-                            width: 100%;
 
                             display: flex;
 
-                            &::before {
-                                content: '\f111';
-                                font-family: "Font Awesome 6 Pro";
-                                display: block;
-                                font-weight: 900;
-                                width: 10px;
-                                height: 10px;
+                            position: relative;
 
+                            &::before {
+                                content: "";
+
+                                position: absolute;
+                                left: 0;
+                                right: 50%;
+                                bottom: -5px;
+
+                                width: 150px;
+                                height: 5px;
+
+                                border-radius: 3px;
+                                background: $Primary-point2;
                             }
 
                             &::after {
-                                content: '\f111';
-                                font-family: "Font Awesome 6 Pro";
-                                display: block;
-                                font-weight: 900;
-                                width: 20px;
-                                height: 20px;
+                                content: "";
+
+                                position: absolute;
+                                left: 160px;
+                                bottom: -5px;
+
+                                width: 5px;
+                                height: 5px;
+
+                                border-radius: 3px;
+                                background: $Primary-point2;
+
                             }
+
+                            
                         }
                     }
                     .contact__container__bottomTxt {
@@ -535,13 +568,58 @@ body {
                 }
             }
             .right-wrap {
+                background: none;
+                backdrop-filter: none;
 
+                height: 100%;
+
+                padding-top: 90px;
+                padding-right: 90px;
+                padding-bottom: 90px;
+
+                .contact_inptWrap {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    input {
+                        background: none;
+                        border: none;
+
+                        width: 100%;
+                        height: 80px;
+
+                        border-bottom: 1px solid $black;
+                    }
+                }
             }
 
         }
     }
 }
 
+#mouse-pointer {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    background: #eee;
+    mix-blend-mode: difference;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.3s;
+    &.hover {
+        transform: scale(3);
+    }
+}
 
 
 // 미디어쿼리
