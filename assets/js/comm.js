@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 풀페이지
     new fullpage("#fullpage", {
         navigation: true,
-        navigationTooltips: ['Intro','Profile','Project','Contact'],
-        anchor: ['intro','profile','project','contact'],
+        navigationTooltips: ['Intro','Profile','OnePage','SamsungHospital','MegaZoo','PjName','Contact'],
+        anchor: ['intro','profile','onepage','samsungHospital','megaZoo','pjName','contact'],
         scrollingSpeed: 1000,
         bigSectionsDestination: top,
         responsiveWidth: 1025,
