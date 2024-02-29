@@ -291,35 +291,42 @@ body {
     }
 }
 
-.text {
-    .text-wrap {
-        display: flex;
-        gap: 10px;
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @include ExtraBold-60;
-        font-size: 180px;
-
-        color: $Primary-LoadingTxt;
-
-        z-index: 10;
-
-        text-shadow: 
-            -8px -8px 0 $white, 
-            8px -8px 0 $white,
-            -8px  8px 0 $white, 
-            8px  8px 0 $white;
-    }
-}
-
 
 #fullpage {
-    #About {
+    // 인트로페이지
+    #Intro {
+        .text {
+            .text-wrap {
+                display: flex;
+                gap: 10px;
+        
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+        
+                @include ExtraBold-60;
+                font-size: 180px;
+        
+                color: $Primary-LoadingTxt;
+        
+                z-index: 10;
+        
+                text-shadow: 
+                    -8px -8px 0 $white, 
+                    8px -8px 0 $white,
+                    -8px  8px 0 $white, 
+                    8px  8px 0 $white;
+            }
+        }
+    }
+    // profile페이지
+    #Profile {
         padding-top: 70px;
+
+        background: #ffffff30;
+        backdrop-filter: blur(10px);
+
         .inner {
             display: flex;
             justify-content: space-between;
@@ -328,12 +335,15 @@ body {
             
             margin: 0 auto;
             
-            gap: 10px;
+            gap: 30px;
 
             .left-wrap {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
                 position: relative;
 
                 .tag {
@@ -448,9 +458,19 @@ body {
                     }
                 }
                 .profile_img {
-                    height: 100%;
-                    position: absolute;
-                    top: 100px;
+                    width: 100%;
+
+                    margin-top: 90px;
+
+                    img {
+                        width: 400px;
+                        height: 400px;
+
+                        display: block;
+                        object-fit: cover;
+
+                        margin: 0 auto;
+                    }
                 }
             }
             .right-wrap {
@@ -485,6 +505,28 @@ body {
             }
         }
     }
+    // 1st project 페이지
+    #pj01{
+        background: #ffffff30;
+        backdrop-filter: blur(10px);
+    }
+    // 2nd project 페이지
+    #pj02{
+        background: #ffffff30;
+        backdrop-filter: blur(10px);
+    }
+    // 3rd project 페이지
+    #pj03{
+        background: #ffffff30;
+        backdrop-filter: blur(10px);
+    }
+    // 4th project 페이지
+    #pj04{
+        background: #ffffff30;
+        backdrop-filter: blur(10px);
+    }
+
+
     #Contact {
         .inner {
             display: flex;
