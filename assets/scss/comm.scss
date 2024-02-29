@@ -322,8 +322,6 @@ body {
     }
     // profile페이지
     #Profile {
-        padding-top: 70px;
-
         background: #ffffff30;
         backdrop-filter: blur(10px);
 
@@ -334,10 +332,15 @@ body {
             width: 80%;
             
             margin: 0 auto;
+
+            border-radius: 15px;
+            box-shadow: .5px .5px 4px $Primary-point1;
+
             
             gap: 30px;
-
+            
             .left-wrap {
+                padding: 10px;
                 width: 50%;
                 display: flex;
                 flex-direction: column;
@@ -348,7 +351,7 @@ body {
 
                 .tag {
                     position: absolute;
-                    top: 0;
+                    top: 20px;
                     left: 50%;
                     transform: translate(-50%, 0);
                     height: 100px;
@@ -509,24 +512,583 @@ body {
     #pj01{
         background: #ffffff30;
         backdrop-filter: blur(10px);
+
+        .inner {
+            width: 80%;
+
+            margin: 0 auto;
+
+            position: relative;
+
+            .PJ01-prev {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                .PJ01-prev_inner {
+                    display: none;
+                    .gsapAni{
+                        .gsap_web {
+
+                        }
+                        .gaspa_mobile {
+
+                        }
+                    }
+                }
+            }
+
+            .PJ01-cont {
+                border-radius: 15px;
+                box-shadow: .5px .5px .8px .5px $white;
+
+                padding: 30px 0 20px 0;
+
+
+                .PJ01-cont_inner {
+                    display: flex;
+                    gap: 30px;
+
+                    .left-wrap {
+                        width: 60%;
+
+                        display: flex;
+                        flex-direction: row;
+
+                        position: relative;
+
+                        .mainScreen {
+                            width: 700px;
+                            height: 420px;
+
+                            background: #000;
+
+                            border-radius: 20px;
+                        }
+                        .screens {
+                            width: 100%;
+
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+
+                            .back_web {
+                                width: 25%;
+                                
+                                display: block;
+                                object-fit: cover;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 40px;
+                            }
+                            .back_mobile {
+                                // display: none;
+                                display: block;
+                                object-fit: cover;
+
+                                width: 8%;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                
+                            }
+                        }
+                    }
+                    .right-wrap {
+                        width: 40%;
+                        padding: 20px 0;
+                        .right-wrap_Num {
+                            @include SemiBold-20;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_Tit {
+                            @include SemiBold-36;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_desc_depth1 {
+                            @include Regular-16;
+
+                            margin-bottom: 30px;
+
+                            li {
+                                display: flex;
+                                align-items: center;
+
+                                margin-right: 20px;
+                                margin-bottom: 10px;
+
+                                .depth1_tit {
+                                    @include SemiBold-20;
+                                    margin-right: 20px
+                                }
+                            }
+                        }
+                        .description {
+                            @include Regular-16;
+                            margin-bottom: 50px;
+                        }
+                        .link_list {
+                            display: flex;
+
+                            li {
+                                margin-right: 10px;
+                                padding: 5px 15px;
+
+                                background: $white;
+
+                                border-radius: 10px;
+                                a {
+                                    @include Bold-24;
+                                    color: $Primary-point2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // 2nd project 페이지
     #pj02{
         background: #ffffff30;
         backdrop-filter: blur(10px);
+
+        .inner {
+            width: 80%;
+
+            margin: 0 auto;
+
+            position: relative;
+
+            .PJ02-prev {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                .PJ02-prev_inner {
+                    display: none;
+                    .gsapAni{
+                        .gsap_web {
+
+                        }
+                        .gaspa_mobile {
+
+                        }
+                    }
+                }
+            }
+
+            .PJ02-cont {
+                border-radius: 15px;
+                box-shadow: .5px .5px .8px .5px $white;
+
+                padding: 30px 0 20px 0;
+
+
+                .PJ02-cont_inner {
+                    display: flex;
+                    gap: 30px;
+
+                    .left-wrap {
+                        width: 60%;
+
+                        display: flex;
+                        flex-direction: row;
+
+                        position: relative;
+
+                        .mainScreen {
+                            width: 700px;
+                            height: 420px;
+
+                            background: #000;
+
+                            border-radius: 20px;
+                        }
+                        .screens {
+                            width: 100%;
+
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+
+                            .back_web {
+                                width: 25%;
+                                
+                                display: block;
+                                object-fit: cover;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 40px;
+                            }
+                            .back_mobile {
+                                // display: none;
+                                display: block;
+                                object-fit: cover;
+
+                                width: 8%;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                
+                            }
+                        }
+                    }
+                    .right-wrap {
+                        width: 40%;
+                        padding: 20px 0;
+                        .right-wrap_Num {
+                            @include SemiBold-20;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_Tit {
+                            @include SemiBold-36;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_desc_depth1 {
+                            @include Regular-16;
+
+                            margin-bottom: 30px;
+
+                            li {
+                                display: flex;
+                                align-items: center;
+
+                                margin-right: 20px;
+                                margin-bottom: 10px;
+
+                                .depth1_tit {
+                                    @include SemiBold-20;
+                                    margin-right: 20px
+                                }
+                            }
+                        }
+                        .description {
+                            @include Regular-16;
+                            margin-bottom: 50px;
+                        }
+                        .link_list {
+                            display: flex;
+
+                            li {
+                                margin-right: 10px;
+                                padding: 5px 15px;
+
+                                background: $white;
+
+                                border-radius: 10px;
+                                a {
+                                    @include Bold-24;
+                                    color: $Primary-point2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // 3rd project 페이지
     #pj03{
         background: #ffffff30;
         backdrop-filter: blur(10px);
+
+        .inner {
+            width: 80%;
+
+            margin: 0 auto;
+
+            position: relative;
+
+            .PJ03-prev {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                .PJ03-prev_inner {
+                    display: none;
+                    .gsapAni{
+                        .gsap_web {
+
+                        }
+                        .gaspa_mobile {
+
+                        }
+                    }
+                }
+            }
+
+            .PJ03-cont {
+                border-radius: 15px;
+                box-shadow: .5px .5px .8px .5px $white;
+
+                padding: 30px 0 20px 0;
+
+
+                .PJ03-cont_inner {
+                    display: flex;
+                    gap: 30px;
+
+                    .left-wrap {
+                        width: 60%;
+
+                        display: flex;
+                        flex-direction: row;
+
+                        position: relative;
+
+                        .mainScreen {
+                            width: 700px;
+                            height: 420px;
+
+                            background: #000;
+
+                            border-radius: 20px;
+                        }
+                        .screens {
+                            width: 100%;
+
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+
+                            .back_web {
+                                width: 25%;
+                                
+                                display: block;
+                                object-fit: cover;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 40px;
+                            }
+                            .back_mobile {
+                                // display: none;
+                                display: block;
+                                object-fit: cover;
+
+                                width: 8%;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                
+                            }
+                        }
+                    }
+                    .right-wrap {
+                        width: 40%;
+                        padding: 20px 0;
+                        .right-wrap_Num {
+                            @include SemiBold-20;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_Tit {
+                            @include SemiBold-36;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_desc_depth1 {
+                            @include Regular-16;
+
+                            margin-bottom: 30px;
+
+                            li {
+                                display: flex;
+                                align-items: center;
+
+                                margin-right: 20px;
+                                margin-bottom: 10px;
+
+                                .depth1_tit {
+                                    @include SemiBold-20;
+                                    margin-right: 20px
+                                }
+                            }
+                        }
+                        .description {
+                            @include Regular-16;
+                            margin-bottom: 50px;
+                        }
+                        .link_list {
+                            display: flex;
+
+                            li {
+                                margin-right: 10px;
+                                padding: 5px 15px;
+
+                                background: $white;
+
+                                border-radius: 10px;
+                                a {
+                                    @include Bold-24;
+                                    color: $Primary-point2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // 4th project 페이지
     #pj04{
         background: #ffffff30;
         backdrop-filter: blur(10px);
+
+        .inner {
+            width: 80%;
+
+            margin: 0 auto;
+
+            position: relative;
+
+            .PJ04-prev {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                .PJ04-prev_inner {
+                    display: none;
+                    .gsapAni{
+                        .gsap_web {
+
+                        }
+                        .gaspa_mobile {
+
+                        }
+                    }
+                }
+            }
+
+            .PJ04-cont {
+                border-radius: 15px;
+                box-shadow: .5px .5px .8px .5px $white;
+
+                padding: 30px 0 20px 0;
+
+
+                .PJ04-cont_inner {
+                    display: flex;
+                    gap: 30px;
+
+                    .left-wrap {
+                        width: 60%;
+
+                        display: flex;
+                        flex-direction: row;
+
+                        position: relative;
+
+                        .mainScreen {
+                            width: 700px;
+                            height: 420px;
+
+                            background: #000;
+
+                            border-radius: 20px;
+                        }
+                        .screens {
+                            width: 100%;
+
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+
+                            .back_web {
+                                width: 25%;
+                                
+                                display: block;
+                                object-fit: cover;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 40px;
+                            }
+                            .back_mobile {
+                                // display: none;
+                                display: block;
+                                object-fit: cover;
+
+                                width: 8%;
+
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                
+                            }
+                        }
+                    }
+                    .right-wrap {
+                        width: 40%;
+                        padding: 20px 0;
+                        .right-wrap_Num {
+                            @include SemiBold-20;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_Tit {
+                            @include SemiBold-36;
+
+                            margin-bottom: 30px;
+                        }
+                        .right-wrap_desc_depth1 {
+                            @include Regular-16;
+
+                            margin-bottom: 30px;
+
+                            li {
+                                display: flex;
+                                align-items: center;
+
+                                margin-right: 20px;
+                                margin-bottom: 10px;
+
+                                .depth1_tit {
+                                    @include SemiBold-20;
+                                    margin-right: 20px
+                                }
+                            }
+                        }
+                        .description {
+                            @include Regular-16;
+                            margin-bottom: 50px;
+                        }
+                        .link_list {
+                            display: flex;
+
+                            li {
+                                margin-right: 10px;
+                                padding: 5px 15px;
+
+                                background: $white;
+
+                                border-radius: 10px;
+                                a {
+                                    @include Bold-24;
+                                    color: $Primary-point2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
-
+    // contact페이지
     #Contact {
         .inner {
             display: flex;
