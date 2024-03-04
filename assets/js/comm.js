@@ -91,20 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // 스크롤트리거 플러그인 사용 선언
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('.background-blur', {
-        opacity: 1, // 초기 투명도 설정
-        scrollTrigger: {
-            trigger: '#fullpage',
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: true // 스크롤시 요소가 스크롤 속도에 따라 부드럽게 따라가도록 함
-        }
-    });
-    
-
-    
-
-    let ScrollTrigger = gsap.to(".turn-sPlanet",{x:"-100px", duration: 1.5});
 
 
 });
