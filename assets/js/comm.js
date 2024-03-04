@@ -1,5 +1,8 @@
 // 준비 이벤트
 document.addEventListener('DOMContentLoaded', function() {
+    // 스크롤트리거 플러그인 사용 선언
+    gsap.registerPlugin(ScrollTrigger);
+
     // 타이핑 효과
     var strings = ["WELCOME!", "YUNHEEVERSE"];
     var el = document.getElementById('str');
@@ -30,18 +33,36 @@ document.addEventListener('DOMContentLoaded', function() {
         bigSectionsDestination: top,
         responsiveWidth: 1025,
         onLeave: function () {
-        jQuery(".section [data-aos]").removeClass("aos-animate");
+            jQuery(".section [data-aos]").removeClass("aos-animate");
         },
         onSlideLeave: function () {
-        jQuery(".slide [data-aos]").removeClass("aos-animate");
+            jQuery(".slide [data-aos]").removeClass("aos-animate");
         },
         afterSlideLoad: function () {
-        jQuery(".slide.active [data-aos]").addClass("aos-animate");
+            jQuery(".slide.active [data-aos]").addClass("aos-animate");
         },
         afterLoad: function () {
-        jQuery(".section.active [data-aos]").addClass("aos-animate");
+            jQuery(".section.active [data-aos]").addClass("aos-animate");
+
+            const scaleImage = document.querySelectorAll('.gsapAni');
+            const innerup = document.querySelectorAll('.inner');
+
+            const tl = gsap.timeline({
+                repeat: 0,
+            })
+            tl.to(scaleImage, {
+                scale: 1,
+                duration: 4,
+            })
+            tl.to(scaleImage, {
+                scale: 0,
+                duration: 4,
+                scrub: 1,
+            })
         },
     });
+
+
 
     // 뒷 배경 이미지들 무한 부유
     const updown = document.querySelectorAll('.up');
@@ -86,11 +107,5 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 0.1,
     })
     requestAnimationFrame(raf);
-    
-
-    // 스크롤트리거 플러그인 사용 선언
-    gsap.registerPlugin(ScrollTrigger);
-
-
 
 });
