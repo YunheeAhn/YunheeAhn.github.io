@@ -323,22 +323,20 @@ body {
     // profile페이지
     #Profile {
         background: #ffffff30;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
 
         .inner {
             display: flex;
             justify-content: space-between;
-            
+
             width: 80%;
-            
+
             margin: 0 auto;
 
             border-radius: 15px;
-            box-shadow: .5px .5px 4px $Primary-point1;
 
-            
             gap: 30px;
-            
+
             .left-wrap {
                 padding: 10px;
                 width: 50%;
@@ -351,11 +349,11 @@ body {
 
                 .tag {
                     position: absolute;
-                    top: 20px;
+                    top: 35px;
                     left: 50%;
                     transform: translate(-50%, 0);
                     height: 100px;
-    
+
                     width: 100%;
 
                     display: flex;
@@ -376,7 +374,6 @@ body {
                         flex-direction: column;
                         align-items: center;
 
-
                         &::before {
                             content: '[';
                             left: 30px;
@@ -390,24 +387,9 @@ body {
                         &:before {
                             position: absolute;
                             top: 0;
-
-                            -webkit-animation: Yrotator 6s infinite alternate;
-                            animation: Yrotator 6s infinite alternate;
-                        }
-                        @keyframes Yrotator {
-                            0% {
-                                -webkit-filter: hue-rotate(0deg);
-                                filter: hue-rotate(0deg);
-                            }
-                        
-                            100% {
-                                -webkit-filter: hue-rotate(360deg);
-                                filter: hue-rotate(360deg);
-                            }
                         }
 
                         .tag__container__list {
-
                             margin-top: 0;
                             padding-left: 0;
                             text-align: center;
@@ -426,21 +408,27 @@ body {
                             @keyframes change {
                                 0%, 12.66%, 100% {
                                     transform: translate3d(0, 0, 0);
+                                    color: $Primary-LoadingTxt;
                                     }
                                 16.66%, 29.32% {
                                     transform: translate3d(0, -25%, 0);
+                                    color: $Primary-NavTxt;
                                     }
                                 33.32%, 45.98% {
                                     transform: translate3d(0, -50%, 0);
+                                    color: $Primary-point2;
                                     }
                                 49.98%, 62.64% {
                                     transform: translate3d(0, -75%, 0);
+                                    color: $Primary-NavTxt;
                                     }
                                 66.64%, 79.3% {
                                     transform: translate3d(0, -50%, 0);
+                                    color: $Primary-LoadingTxt;
                                     }
                                 83.3%, 95.96% {
                                     transform: translate3d(0, -25%, 0);
+                                    color: $Primary-NavTxt;
                                     }
                                 }
 
@@ -511,29 +499,52 @@ body {
     // 1st project 페이지
     #pj01{
         background: #ffffff30;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
+
+        position: relative;
 
         .inner {
             width: 80%;
 
             margin: 0 auto;
 
-            position: relative;
-
             .PJ01-prev {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
+                z-index: 10000;
 
+                width: 80%;
+                height: 80%;
+                
+                position: relative;
+                
                 .PJ01-prev_inner {
-                    display: none;
-                    .gsapAni{
-                        .gsap_web {
+                    width: 100%;
 
+                    margin: 0;
+                    padding: 0;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-30%,-10%);
+
+                    .gsapAni {
+                        display: flex;
+
+                        width: 100%;
+                        height: 100%;
+
+                        position: relative;
+
+                        .gsap_web {
+                            width: 75%;
+                            object-fit: cover;
                         }
                         .gaspa_mobile {
+                            width: 25%;
 
+                            position: absolute;
+                            bottom: 100px;
+                            right: 100px;
                         }
                     }
                 }
@@ -541,7 +552,6 @@ body {
 
             .PJ01-cont {
                 border-radius: 15px;
-                box-shadow: .5px .5px .8px .5px $white;
 
                 padding: 30px 0 20px 0;
 
@@ -584,7 +594,7 @@ body {
                                 right: 40px;
                             }
                             .back_mobile {
-                                // display: none;
+                                display: none;
                                 display: block;
                                 object-fit: cover;
 
@@ -656,29 +666,51 @@ body {
     // 2nd project 페이지
     #pj02{
         background: #ffffff30;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
+
+        position: relative;
 
         .inner {
             width: 80%;
 
             margin: 0 auto;
 
-            position: relative;
-
             .PJ02-prev {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
+                z-index: 10000;
+
+                width: 80%;
+                height: 80%;
+                
+                position: relative;
 
                 .PJ02-prev_inner {
-                    display: none;
-                    .gsapAni{
-                        .gsap_web {
+                    width: 100%;
 
+                    margin: 0;
+                    padding: 0;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-30%,-10%);
+
+                    .gsapAni{
+                        display: flex;
+
+                        width: 100%;
+                        height: 100%;
+
+                        position: relative;
+                        .gsap_web {
+                            width: 75%;
+                            object-fit: cover;
                         }
                         .gaspa_mobile {
+                            width: 25%;
 
+                            position: absolute;
+                            bottom: 100px;
+                            right: 100px;
                         }
                     }
                 }
@@ -686,7 +718,6 @@ body {
 
             .PJ02-cont {
                 border-radius: 15px;
-                box-shadow: .5px .5px .8px .5px $white;
 
                 padding: 30px 0 20px 0;
 
@@ -801,29 +832,52 @@ body {
     // 3rd project 페이지
     #pj03{
         background: #ffffff30;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
+
+        position: relative;
 
         .inner {
             width: 80%;
 
             margin: 0 auto;
 
-            position: relative;
-
             .PJ03-prev {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
+                z-index: 10000;
+
+                width: 80%;
+                height: 80%;
+                
+                position: relative;
 
                 .PJ03-prev_inner {
-                    display: none;
-                    .gsapAni{
-                        .gsap_web {
+                    width: 100%;
 
+                    margin: 0;
+                    padding: 0;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-30%,-10%);
+
+                    .gsapAni {
+                        display: flex;
+
+                        width: 100%;
+                        height: 100%;
+
+                        position: relative;
+
+                        .gsap_web {
+                            width: 75%;
+                            object-fit: cover;
                         }
                         .gaspa_mobile {
+                            width: 25%;
 
+                            position: absolute;
+                            bottom: 100px;
+                            right: 100px;
                         }
                     }
                 }
@@ -831,10 +885,8 @@ body {
 
             .PJ03-cont {
                 border-radius: 15px;
-                box-shadow: .5px .5px .8px .5px $white;
 
                 padding: 30px 0 20px 0;
-
 
                 .PJ03-cont_inner {
                     display: flex;
@@ -946,29 +998,52 @@ body {
     // 4th project 페이지
     #pj04{
         background: #ffffff30;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
+        
+        position: relative;
 
         .inner {
             width: 80%;
 
             margin: 0 auto;
 
-            position: relative;
-
             .PJ04-prev {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
+                z-index: 10000;
+
+                width: 80%;
+                height: 80%;
+                
+                position: relative;
 
                 .PJ04-prev_inner {
-                    display: none;
-                    .gsapAni{
-                        .gsap_web {
+                    width: 100%;
 
+                    margin: 0;
+                    padding: 0;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-30%,-10%);
+                    
+                    .gsapAni {
+                        display: flex;
+
+                        width: 100%;
+                        height: 100%;
+
+                        position: relative;
+
+                        .gsap_web {
+                            width: 75%;
+                            object-fit: cover;
                         }
                         .gaspa_mobile {
+                            width: 25%;
 
+                            position: absolute;
+                            bottom: 100px;
+                            right: 100px;
                         }
                     }
                 }
@@ -976,10 +1051,8 @@ body {
 
             .PJ04-cont {
                 border-radius: 15px;
-                box-shadow: .5px .5px .8px .5px $white;
 
                 padding: 30px 0 20px 0;
-
 
                 .PJ04-cont_inner {
                     display: flex;
