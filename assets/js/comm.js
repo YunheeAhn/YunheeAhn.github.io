@@ -62,12 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-
-
     // 뒷 배경 이미지들 무한 부유
     const updown = document.querySelectorAll('.up');
     gsap.to(updown, {
-        duration: .9,
+        duration: .7,
         y: 3,
         repeat: -1,
         yoyo: true,
@@ -76,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const downup = document.querySelectorAll('.down');
     gsap.to(downup, {
-        duration: .9,
+        duration: .7,
         y: -3,
         repeat: -1,
         yoyo: true,
@@ -84,8 +82,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 뒷 배경 라이트 무한 회전
-    const curlRight = document.querySelector('.background-light');
+    const curlRight = document.querySelector('#background-light');
     gsap.to(curlRight, {
+        transformOrigin: "center center",
         duration : 5,
         rotate: 360,
         repeat: -1,

@@ -353,7 +353,6 @@ legend {
 
 body {
   position: relative;
-  height: 100vh;
 }
 
 #header {
@@ -393,187 +392,12 @@ body {
   display: flex;
 }
 
-.background {
-  position: fixed;
-  background: url(../../images/background.png);
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-}
-.background .background__fixed {
-  z-index: -10;
-  width: 100%;
-  height: 100%;
+svg {
   position: fixed;
 }
-.background .background__fixed .background-color {
-  z-index: -10;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.background .background__fixed .background-light {
-  z-index: -10;
-  background: url(../../images/light.png) no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: -28%;
-  left: -30%;
+
+#background-light {
   transform-origin: center center;
-}
-.background .background__fixed .background-dust01 {
-  z-index: -10;
-  background: url(../../images/dust.png) no-repeat center center;
-  background-size: cover;
-  width: 70%;
-  height: 70%;
-  position: absolute;
-  bottom: 10px;
-  left: -10px;
-}
-.background .background__fixed .background-dust02 {
-  z-index: -10;
-  background: url(../../images/dust.png) no-repeat center center;
-  background-size: cover;
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  top: 0;
-  right: -30px;
-  opacity: 90%;
-  transform: rotate(45deg);
-}
-.background .background__fixed .background-dust03 {
-  z-index: -10;
-  background: url(../../images/dust.png) no-repeat center center;
-  background-size: cover;
-  width: 40%;
-  height: 40%;
-  opacity: 50%;
-  position: absolute;
-  top: 150px;
-  left: 30px;
-  transform: rotate(-30deg);
-}
-.background .background__fixed .background-wave {
-  z-index: -10;
-  background: url(../../images/wave.png) no-repeat center center;
-  background-size: contain;
-  width: 80%;
-  height: 40%;
-  position: absolute;
-  bottom: -4%;
-  left: -7%;
-}
-.background .background__fixed .background-planet {
-  z-index: -10;
-  background: url(../../images/planet3.png) no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: -70%;
-  right: -38%;
-}
-.background .blackground__topPlanet {
-  z-index: -6;
-}
-.background .blackground__topPlanet .pin-planet {
-  z-index: -6;
-  background: url(../../images/planet2.png) no-repeat center center;
-  background-size: contain;
-  width: 80%;
-  height: 80%;
-  position: absolute;
-  top: -45%;
-  left: -40%;
-}
-.background .blackground__topPlanet .pin-ringPlanet {
-  z-index: -6;
-  background: url(../../images/planet4.png) no-repeat center center;
-  background-size: contain;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: -20%;
-  right: 10%;
-}
-.background .background__turnning {
-  z-index: -3;
-}
-.background .background__turnning .turn-sPlanet {
-  z-index: -3;
-  background: url(../../images/planet3S.png) no-repeat;
-  background-size: contain;
-  width: 10%;
-  height: 10%;
-  position: absolute;
-  top: 20%;
-  left: 22%;
-}
-.background .background__turnning .turn-mPlanet {
-  z-index: -3;
-  background: url(../../images/planet2.png) no-repeat;
-  background-size: contain;
-  width: 18%;
-  height: 18%;
-  position: absolute;
-  top: 23%;
-  left: 32%;
-}
-.background .background__turnning .turn-RingPlanetLeft {
-  z-index: -3;
-  background: url(../../images/planet5.png) no-repeat;
-  background-size: contain;
-  width: 72%;
-  height: 72%;
-  position: absolute;
-  top: 17%;
-  left: -5%;
-}
-.background .background__turnning .turn-RingPlanetRight {
-  z-index: -3;
-  background: url(../../images/planet1.png) no-repeat;
-  background-size: contain;
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  top: -10%;
-  right: -70%;
-}
-.background .background__turnning .background-dust04 {
-  z-index: -3;
-  background: url(../../images/dust.png) no-repeat center center;
-  background-size: cover;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  bottom: 10px;
-  left: -30px;
-  transform: rotate(20deg);
-}
-.background .background__turnning .background-dust05 {
-  z-index: -3;
-  background: url(../../images/dust.png) no-repeat center center;
-  background-size: cover;
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  top: 10%;
-  right: -13%;
-  transform: rotate(-90deg);
-}
-.background .background-blur {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4392156863);
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  opacity: 0;
 }
 
 #fullpage #Intro .text .text-wrap {
