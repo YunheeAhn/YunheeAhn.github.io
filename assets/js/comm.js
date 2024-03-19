@@ -2,7 +2,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     // 스크롤트리거 플러그인 사용 선언
     gsap.registerPlugin(ScrollTrigger);
-
+    // 섹션 고정
+    gsap.utils.toArray('.section').forEach((panel,i) => {
+        ScrollTrigger.create({
+            trigger : panel,
+            start : 'top top',
+            pin : true,
+            pinSpacing : true,
+            scrub: 1,
+        })
+    })
     // 타이핑 효과
     var strings = ["WELCOME!", "YUNHEEVERSE"];
     var el = document.getElementById('str');
@@ -23,44 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 90);
     }
     animateStrings(0);
-
-    // 풀페이지
-    new fullpage("#fullpage", {
-        navigation: true,
-        navigationTooltips: ['Intro','Profile','OnePage','SamsungHospital','MegaZoo','PjName','Contact'],
-        anchor: ['intro','profile','onepage','samsungHospital','megaZoo','pjName','contact'],
-        scrollingSpeed: 1000,
-        bigSectionsDestination: top,
-        responsiveWidth: 1025,
-        onLeave: function () {
-            jQuery(".section [data-aos]").removeClass("aos-animate");
-        },
-        onSlideLeave: function () {
-            jQuery(".slide [data-aos]").removeClass("aos-animate");
-        },
-        afterSlideLoad: function () {
-            jQuery(".slide.active [data-aos]").addClass("aos-animate");
-        },
-        afterLoad: function () {
-            jQuery(".section.active [data-aos]").addClass("aos-animate");
-
-            const scaleImage = document.querySelectorAll('.gsapAni');
-            const innerup = document.querySelectorAll('.inner');
-
-            const tl = gsap.timeline({
-                repeat: 0,
-            })
-            tl.to(scaleImage, {
-                scale: 1,
-                duration: 4,
-            })
-            tl.to(scaleImage, {
-                scale: 0,
-                duration: 4,
-                scrub: 1,
-            })
-        },
-    });
 
     // 뒷 배경 이미지들 무한 부유
     const updown = document.querySelectorAll('.up');
@@ -105,6 +76,18 @@ document.addEventListener('DOMContentLoaded', function() {
         opacity: 1,
         duration: 0.1,
     })
-    requestAnimationFrame(raf);
 
+    // 스무스
+    const lenis = new Lenis();
+
+    lenis.on('scroll', (e) => {
+        console.log(e);
+    })
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
 });

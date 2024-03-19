@@ -347,10 +347,6 @@ legend {
   content: "";
 }
 
-#fp-nav {
-  transform: translateY(-30%);
-}
-
 body {
   position: relative;
 }
@@ -392,7 +388,7 @@ body {
   display: flex;
 }
 
-svg {
+.fix-back {
   position: fixed;
 }
 
@@ -400,11 +396,17 @@ svg {
   transform-origin: center center;
 }
 
+#fullpage {
+  position: relative;
+}
+#fullpage #Intro {
+  height: 100vh;
+}
 #fullpage #Intro .text .text-wrap {
   display: flex;
   gap: 10px;
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   transform: translateX(-50%);
   font-size: 60px;
@@ -416,6 +418,7 @@ svg {
   text-shadow: -8px -8px 0 #ffffff, 8px -8px 0 #ffffff, -8px 8px 0 #ffffff, 8px 8px 0 #ffffff;
 }
 #fullpage #Profile {
+  height: 100vh;
   background: rgba(255, 255, 255, 0.1882352941);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -565,6 +568,7 @@ svg {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   position: relative;
+  height: 100vh;
 }
 #fullpage #pj01 .inner {
   width: 80%;
@@ -707,6 +711,7 @@ svg {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   position: relative;
+  height: 100vh;
 }
 #fullpage #pj02 .inner {
   width: 80%;
@@ -848,6 +853,7 @@ svg {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   position: relative;
+  height: 100vh;
 }
 #fullpage #pj03 .inner {
   width: 80%;
@@ -989,6 +995,7 @@ svg {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   position: relative;
+  height: 100vh;
 }
 #fullpage #pj04 .inner {
   width: 80%;
@@ -1124,6 +1131,9 @@ svg {
   font-weight: 700;
   line-height: 28px;
   color: #c871ff;
+}
+#fullpage #Contact {
+  height: 100vh;
 }
 #fullpage #Contact .inner {
   display: flex;
