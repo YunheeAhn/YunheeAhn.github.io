@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 0.1,
     })
 
-    // 스무스
+    // lenis.js 스무스
     const lenis = new Lenis();
 
     lenis.on('scroll', (e) => {
@@ -88,6 +88,28 @@ document.addEventListener('DOMContentLoaded', function() {
         lenis.raf(time)
         requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
+
+    let backMoving = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.fix-back',
+            start: 'top top',
+            end: 'bottom bottom',
+            toggleActions: "restart none reverse none",
+        }
+    });
+    
+    backMoving.to('#turn-RingPlanetLeft', {
+        x: 100,
+        y: -100,
+        rotate: -30,
+        duration: 1,
+    }, "-=0.5").to('#turn-RingPlanetLeft', {
+        rotate : 5,
+        y : -200,
+        x : 450,
+        scale : .6,
+        pin : 1,
+        duration: 1,
+    })
 });
