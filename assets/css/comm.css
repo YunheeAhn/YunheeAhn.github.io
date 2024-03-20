@@ -618,9 +618,9 @@ body {
 }
 #fullpage #pj01 .inner .PJ01-cont .PJ01-cont_inner .left-wrap .mainScreen .portfolio {
   overflow: hidden;
-  width: 400%;
-  height: 400%;
-  transform: scale(0.25);
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
   transform-origin: 0 0;
 }
 #fullpage #pj01 .inner .PJ01-cont .PJ01-cont_inner .right-wrap {
@@ -719,9 +719,9 @@ body {
 }
 #fullpage #pj02 .inner .PJ02-cont .PJ02-cont_inner .left-wrap .mainScreen .portfolio {
   overflow: hidden;
-  width: 400%;
-  height: 400%;
-  transform: scale(0.25);
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
   transform-origin: 0 0;
 }
 #fullpage #pj02 .inner .PJ02-cont .PJ02-cont_inner .right-wrap {
@@ -809,13 +809,23 @@ body {
   width: 60%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   position: relative;
 }
 #fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .left-wrap .mainScreen {
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: #000;
   border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .left-wrap .mainScreen .portfolio {
+  overflow: hidden;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
 }
 #fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .right-wrap {
   width: 40%;
