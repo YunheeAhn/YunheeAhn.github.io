@@ -90,6 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     requestAnimationFrame(raf);
 
+
+    // 행성 스크롤 트리거 움직임
     let backMoving = gsap.timeline({
         scrollTrigger: {
             trigger: '.fix-back',
