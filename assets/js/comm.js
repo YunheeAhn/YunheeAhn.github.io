@@ -91,27 +91,27 @@ document.addEventListener('DOMContentLoaded', function() {
     requestAnimationFrame(raf);
 
 
-    // 행성 스크롤 트리거 움직임
-    let backMoving = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.fix-back',
-            start: 'top top',
-            end: 'bottom bottom',
-            toggleActions: "restart none reverse none",
-        }
-    });
+    // // 행성 스크롤 트리거 움직임
+    // let backMoving = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: '.fix-back',
+    //         start: 'top top',
+    //         end: 'bottom bottom',
+    //         toggleActions: "restart none reverse none",
+    //     }
+    // });
     
-    backMoving.to('#turn-RingPlanetLeft', {
-        y: -100,
-        x: 100,
-        rotate: -30,
-        duration: 1,
-    }, "-=0.5").to('#turn-RingPlanetLeft', {
-        rotate : 5,
-        y : -200,
-        x : 450,
-        scale : .6,
-        pin : true,
-        duration: 1,
-    })
+    // backMoving.to('#turn-RingPlanetLeft', {
+    //     y: -100,
+    //     x: 100,
+    //     rotate: -30,
+    //     duration: 1,
+    // }, "-=0.5").to('#turn-RingPlanetLeft', {
+    //     rotate : 5,
+    //     y : -200,
+    //     x : 450,
+    //     scale : .6,
+    //     pin : true,
+    //     duration: 1,
+    // })
 });
