@@ -69,6 +69,10 @@ body {
     transform-origin: center center;
     
 }
+.pin-spacer {
+    padding: 0;
+    height: 100vh;
+}
 
 #fullpage {
     position: relative;
@@ -108,17 +112,19 @@ body {
         background: #ffffff30;
         backdrop-filter: blur(20px);
 
+        display: flex;
+        align-items: center;
+
         .inner {
             display: flex;
             justify-content: space-between;
 
-            width: 80%;
+            width: 90%;
+            height: auto;
 
             margin: 0 auto;
 
-            border-radius: 15px;
-
-            gap: 30px;
+            gap: 50px;
 
             .left-wrap {
                 padding: 10px;
@@ -288,62 +294,70 @@ body {
 
         height: 100vh;
 
+        display: flex;
+        align-items: center;
+
         .inner {
             width: 80%;
+            height: 100%;
 
             margin: 0 auto;
 
-            .PJ01-prev {
-                z-index: 10000;
+            // .PJ01-prev {
+            //     z-index: 10000;
 
-                width: 80%;
-                height: 80%;
+            //     width: 80%;
+            //     height: 80%;
                 
-                position: relative;
+            //     position: relative;
                 
-                .PJ01-prev_inner {
-                    width: 100%;
+            //     .PJ01-prev_inner {
+            //         width: 100%;
 
-                    margin: 0;
-                    padding: 0;
+            //         margin: 0;
+            //         padding: 0;
 
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-30%,-10%);
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         transform: translate(-30%,-10%);
 
-                    .gsapAni {
-                        display: flex;
+            //         .gsapAni {
+            //             display: flex;
 
-                        width: 100%;
-                        height: 100%;
+            //             width: 100%;
+            //             height: 100%;
 
-                        position: relative;
+            //             position: relative;
 
-                        .gsap_web {
-                            width: 75%;
-                            object-fit: cover;
-                        }
-                        .gaspa_mobile {
-                            width: 25%;
+            //             .gsap_web {
+            //                 width: 75%;
+            //                 object-fit: cover;
+            //             }
+            //             .gaspa_mobile {
+            //                 width: 25%;
 
-                            position: absolute;
-                            bottom: 100px;
-                            right: 100px;
-                        }
-                    }
-                }
-            }
+            //                 position: absolute;
+            //                 bottom: 100px;
+            //                 right: 100px;
+            //             }
+            //         }
+            //     }
+            // }
 
             .PJ01-cont {
-                border-radius: 15px;
-
-                padding: 30px 0 20px 0;
-
+                height: 100%;
+                display: flex;
+                align-items: center;
 
                 .PJ01-cont_inner {
                     display: flex;
-                    gap: 30px;
+                    justify-content: space-between;
+
+                    width: 100%;
+                    height: auto;
+
+                    gap: 50px;
 
                     .left-wrap {
                         width: 60%;
@@ -354,42 +368,41 @@ body {
                         position: relative;
 
                         .mainScreen {
-                            width: 700px;
-                            height: 420px;
+                            width: 100%;
+                            height: 100%;
 
                             background: #000;
 
                             border-radius: 20px;
-                        }
-                        .screens {
-                            width: 100%;
 
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
+                            overflow: hidden;
 
-                            .back_web {
-                                width: 25%;
-                                
+                            position: relative;
+
+                            .portfolio {
+                                overflow: hidden;
+                                width: 400%;
+                                height: 400%;
+
                                 display: block;
-                                object-fit: cover;
 
                                 position: absolute;
-                                bottom: 0;
-                                right: 40px;
-                            }
-                            .back_mobile {
-                                display: none;
-                                display: block;
-                                object-fit: cover;
+                                top: 0;
+                                left: 0;
 
-                                width: 8%;
-
-                                position: absolute;
-                                bottom: 0;
-                                right: 0;
-                                
+                                -ms-transform: scale(0.15);
+                                -moz-transform: scale(0.15);
+                                -o-transform: scale(0.15);
+                                -webkit-transform: scale(0.15);
+                                transform: scale(0.25);
+                            
+                                -ms-transform-origin: 0 0;
+                                -moz-transform-origin: 0 0;
+                                -o-transform-origin: 0 0;
+                                -webkit-transform-origin: 0 0;
+                                transform-origin: 0 0;
                             }
+                            
                         }
                     }
                     .right-wrap {
@@ -459,59 +472,65 @@ body {
 
         .inner {
             width: 80%;
+            height: 100%;
 
             margin: 0 auto;
 
-            .PJ02-prev {
-                z-index: 10000;
+            // .PJ02-prev {
+            //     z-index: 10000;
 
-                width: 80%;
-                height: 80%;
+            //     width: 80%;
+            //     height: 80%;
                 
-                position: relative;
+            //     position: relative;
 
-                .PJ02-prev_inner {
-                    width: 100%;
+            //     .PJ02-prev_inner {
+            //         width: 100%;
 
-                    margin: 0;
-                    padding: 0;
+            //         margin: 0;
+            //         padding: 0;
 
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-30%,-10%);
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         transform: translate(-30%,-10%);
 
-                    .gsapAni{
-                        display: flex;
+            //         .gsapAni{
+            //             display: flex;
 
-                        width: 100%;
-                        height: 100%;
+            //             width: 100%;
+            //             height: 100%;
 
-                        position: relative;
-                        .gsap_web {
-                            width: 75%;
-                            object-fit: cover;
-                        }
-                        .gaspa_mobile {
-                            width: 25%;
+            //             position: relative;
+            //             .gsap_web {
+            //                 width: 75%;
+            //                 object-fit: cover;
+            //             }
+            //             .gaspa_mobile {
+            //                 width: 25%;
 
-                            position: absolute;
-                            bottom: 100px;
-                            right: 100px;
-                        }
-                    }
-                }
-            }
+            //                 position: absolute;
+            //                 bottom: 100px;
+            //                 right: 100px;
+            //             }
+            //         }
+            //     }
+            // }
 
             .PJ02-cont {
-                border-radius: 15px;
-
-                padding: 30px 0 20px 0;
+                height: 100%;
+                display: flex;
+                align-items: center;
 
 
                 .PJ02-cont_inner {
                     display: flex;
-                    gap: 30px;
+                    justify-content: space-between;
+
+                    width: 100%;
+                    height: auto;
+
+                    gap: 50px;
 
                     .left-wrap {
                         width: 60%;
@@ -522,42 +541,12 @@ body {
                         position: relative;
 
                         .mainScreen {
-                            width: 700px;
-                            height: 420px;
+                            width: 100%;
+                            height: 100%;
 
                             background: #000;
 
                             border-radius: 20px;
-                        }
-                        .screens {
-                            width: 100%;
-
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-
-                            .back_web {
-                                width: 25%;
-                                
-                                display: block;
-                                object-fit: cover;
-
-                                position: absolute;
-                                bottom: 0;
-                                right: 40px;
-                            }
-                            .back_mobile {
-                                // display: none;
-                                display: block;
-                                object-fit: cover;
-
-                                width: 8%;
-
-                                position: absolute;
-                                bottom: 0;
-                                right: 0;
-                                
-                            }
                         }
                     }
                     .right-wrap {
@@ -624,62 +613,71 @@ body {
         position: relative;
 
         height: 100vh;
+
+        display: flex;
+        align-items: center;
+
         .inner {
             width: 80%;
+            height: 100%;
 
             margin: 0 auto;
 
-            .PJ03-prev {
-                z-index: 10000;
+            // .PJ03-prev {
+            //     z-index: 10000;
 
-                width: 80%;
-                height: 80%;
+            //     width: 80%;
+            //     height: 80%;
                 
-                position: relative;
+            //     position: relative;
 
-                .PJ03-prev_inner {
-                    width: 100%;
+            //     .PJ03-prev_inner {
+            //         width: 100%;
 
-                    margin: 0;
-                    padding: 0;
+            //         margin: 0;
+            //         padding: 0;
 
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-30%,-10%);
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         transform: translate(-30%,-10%);
 
-                    .gsapAni {
-                        display: flex;
+            //         .gsapAni {
+            //             display: flex;
 
-                        width: 100%;
-                        height: 100%;
+            //             width: 100%;
+            //             height: 100%;
 
-                        position: relative;
+            //             position: relative;
 
-                        .gsap_web {
-                            width: 75%;
-                            object-fit: cover;
-                        }
-                        .gaspa_mobile {
-                            width: 25%;
+            //             .gsap_web {
+            //                 width: 75%;
+            //                 object-fit: cover;
+            //             }
+            //             .gaspa_mobile {
+            //                 width: 25%;
 
-                            position: absolute;
-                            bottom: 100px;
-                            right: 100px;
-                        }
-                    }
-                }
-            }
+            //                 position: absolute;
+            //                 bottom: 100px;
+            //                 right: 100px;
+            //             }
+            //         }
+            //     }
+            // }
 
             .PJ03-cont {
-                border-radius: 15px;
-
-                padding: 30px 0 20px 0;
+                height: 100%;
+                display: flex;
+                align-items: center;
 
                 .PJ03-cont_inner {
                     display: flex;
-                    gap: 30px;
+                    justify-content: space-between;
 
+                    width: 100%;
+                    height: auto;
+
+                    gap: 50px;
                     .left-wrap {
                         width: 60%;
 
@@ -689,42 +687,12 @@ body {
                         position: relative;
 
                         .mainScreen {
-                            width: 700px;
-                            height: 420px;
+                            width: 100%;
+                            height: 100%;
 
                             background: #000;
 
                             border-radius: 20px;
-                        }
-                        .screens {
-                            width: 100%;
-
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-
-                            .back_web {
-                                width: 25%;
-                                
-                                display: block;
-                                object-fit: cover;
-
-                                position: absolute;
-                                bottom: 0;
-                                right: 40px;
-                            }
-                            .back_mobile {
-                                // display: none;
-                                display: block;
-                                object-fit: cover;
-
-                                width: 8%;
-
-                                position: absolute;
-                                bottom: 0;
-                                right: 0;
-                                
-                            }
                         }
                     }
                     .right-wrap {
@@ -794,59 +762,65 @@ body {
 
         .inner {
             width: 80%;
+            height: 100%;
 
             margin: 0 auto;
 
-            .PJ04-prev {
-                z-index: 10000;
+            // .PJ04-prev {
+            //     z-index: 10000;
 
-                width: 80%;
-                height: 80%;
+            //     width: 80%;
+            //     height: 80%;
                 
-                position: relative;
+            //     position: relative;
 
-                .PJ04-prev_inner {
-                    width: 100%;
+            //     .PJ04-prev_inner {
+            //         width: 100%;
 
-                    margin: 0;
-                    padding: 0;
+            //         margin: 0;
+            //         padding: 0;
 
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-30%,-10%);
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         transform: translate(-30%,-10%);
                     
-                    .gsapAni {
-                        display: flex;
+            //         .gsapAni {
+            //             display: flex;
 
-                        width: 100%;
-                        height: 100%;
+            //             width: 100%;
+            //             height: 100%;
 
-                        position: relative;
+            //             position: relative;
 
-                        .gsap_web {
-                            width: 75%;
-                            object-fit: cover;
-                        }
-                        .gaspa_mobile {
-                            width: 25%;
+            //             .gsap_web {
+            //                 width: 75%;
+            //                 object-fit: cover;
+            //             }
+            //             .gaspa_mobile {
+            //                 width: 25%;
 
-                            position: absolute;
-                            bottom: 100px;
-                            right: 100px;
-                        }
-                    }
-                }
-            }
+            //                 position: absolute;
+            //                 bottom: 100px;
+            //                 right: 100px;
+            //             }
+            //         }
+            //     }
+            // }
 
             .PJ04-cont {
-                border-radius: 15px;
-
-                padding: 30px 0 20px 0;
+                height: 100%;
+                display: flex;
+                align-items: center;
 
                 .PJ04-cont_inner {
                     display: flex;
-                    gap: 30px;
+                    justify-content: space-between;
+
+                    width: 100%;
+                    height: auto;
+
+                    gap: 50px;
 
                     .left-wrap {
                         width: 60%;
@@ -857,42 +831,12 @@ body {
                         position: relative;
 
                         .mainScreen {
-                            width: 700px;
-                            height: 420px;
+                            width: 100%;
+                            height: 100%;
 
                             background: #000;
 
                             border-radius: 20px;
-                        }
-                        .screens {
-                            width: 100%;
-
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-
-                            .back_web {
-                                width: 25%;
-                                
-                                display: block;
-                                object-fit: cover;
-
-                                position: absolute;
-                                bottom: 0;
-                                right: 40px;
-                            }
-                            .back_mobile {
-                                // display: none;
-                                display: block;
-                                object-fit: cover;
-
-                                width: 8%;
-
-                                position: absolute;
-                                bottom: 0;
-                                right: 0;
-                                
-                            }
                         }
                     }
                     .right-wrap {
@@ -954,6 +898,10 @@ body {
     // contact페이지
     #Contact {
         height: 100vh;
+
+        display: flex;
+        align-items: center;
+        
         .inner {
             display: flex;
             
