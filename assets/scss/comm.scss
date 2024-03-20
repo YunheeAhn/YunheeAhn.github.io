@@ -437,17 +437,24 @@ body {
                         }
                         .link_list {
                             display: flex;
+                            gap : 10px;
+
+                            :hover {
+                                color : $white;
+                                background: $Primary-point2;
+                                border-radius: 10px;
+                            }
 
                             li {
-                                margin-right: 10px;
                                 padding: 5px 15px;
-
                                 background: $white;
 
                                 border-radius: 10px;
+
                                 a {
                                     @include Bold-24;
                                     color: $Primary-point2;
+                                    width: 100%;                                    
                                 }
                             }
                         }
@@ -548,7 +555,7 @@ body {
 
                             position: relative;
 
-                            .portfolio {
+                            .biennale {
                                 overflow: hidden;
                                 width: 200%;
                                 height: 200%;
@@ -604,17 +611,24 @@ body {
                         }
                         .link_list {
                             display: flex;
+                            gap : 10px;
+
+                            :hover {
+                                color : $white;
+                                background: $Primary-point2;
+                                border-radius: 10px;
+                            }
 
                             li {
-                                margin-right: 10px;
                                 padding: 5px 15px;
-
                                 background: $white;
 
                                 border-radius: 10px;
+
                                 a {
                                     @include Bold-24;
                                     color: $Primary-point2;
+                                    width: 100%;                                    
                                 }
                             }
                         }
@@ -717,7 +731,7 @@ body {
 
                             position: relative;
 
-                            .portfolio {
+                            .ss-Ho {
                                 overflow: hidden;
                                 width: 200%;
                                 height: 200%;
@@ -773,17 +787,24 @@ body {
                         }
                         .link_list {
                             display: flex;
+                            gap : 10px;
+
+                            :hover {
+                                color : $white;
+                                background: $Primary-point2;
+                                border-radius: 10px;
+                            }
 
                             li {
-                                margin-right: 10px;
                                 padding: 5px 15px;
-
                                 background: $white;
 
                                 border-radius: 10px;
+
                                 a {
                                     @include Bold-24;
                                     color: $Primary-point2;
+                                    width: 100%;                                    
                                 }
                             }
                         }
@@ -884,7 +905,7 @@ body {
 
                             position: relative;
 
-                            .portfolio {
+                            .megaZoo {
                                 overflow: hidden;
                                 width: 200%;
                                 height: 200%;
@@ -940,17 +961,24 @@ body {
                         }
                         .link_list {
                             display: flex;
+                            gap : 10px;
+
+                            :hover {
+                                color : $white;
+                                background: $Primary-point2;
+                                border-radius: 10px;
+                            }
 
                             li {
-                                margin-right: 10px;
                                 padding: 5px 15px;
-
                                 background: $white;
 
                                 border-radius: 10px;
+
                                 a {
                                     @include Bold-24;
                                     color: $Primary-point2;
+                                    width: 100%;                                    
                                 }
                             }
                         }

@@ -665,9 +665,14 @@ body {
 }
 #fullpage #pj01 .inner .PJ01-cont .PJ01-cont_inner .right-wrap .link_list {
   display: flex;
+  gap: 10px;
+}
+#fullpage #pj01 .inner .PJ01-cont .PJ01-cont_inner .right-wrap .link_list :hover {
+  color: #ffffff;
+  background: #c871ff;
+  border-radius: 10px;
 }
 #fullpage #pj01 .inner .PJ01-cont .PJ01-cont_inner .right-wrap .link_list li {
-  margin-right: 10px;
   padding: 5px 15px;
   background: #ffffff;
   border-radius: 10px;
@@ -677,6 +682,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   color: #c871ff;
+  width: 100%;
 }
 #fullpage #pj02 {
   background: rgba(255, 255, 255, 0.1882352941);
@@ -717,7 +723,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-#fullpage #pj02 .inner .PJ02-cont .PJ02-cont_inner .left-wrap .mainScreen .portfolio {
+#fullpage #pj02 .inner .PJ02-cont .PJ02-cont_inner .left-wrap .mainScreen .biennale {
   overflow: hidden;
   width: 200%;
   height: 200%;
@@ -766,9 +772,14 @@ body {
 }
 #fullpage #pj02 .inner .PJ02-cont .PJ02-cont_inner .right-wrap .link_list {
   display: flex;
+  gap: 10px;
+}
+#fullpage #pj02 .inner .PJ02-cont .PJ02-cont_inner .right-wrap .link_list :hover {
+  color: #ffffff;
+  background: #c871ff;
+  border-radius: 10px;
 }
 #fullpage #pj02 .inner .PJ02-cont .PJ02-cont_inner .right-wrap .link_list li {
-  margin-right: 10px;
   padding: 5px 15px;
   background: #ffffff;
   border-radius: 10px;
@@ -778,6 +789,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   color: #c871ff;
+  width: 100%;
 }
 #fullpage #pj03 {
   background: rgba(255, 255, 255, 0.1882352941);
@@ -820,7 +832,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-#fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .left-wrap .mainScreen .portfolio {
+#fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .left-wrap .mainScreen .ss-Ho {
   overflow: hidden;
   width: 200%;
   height: 200%;
@@ -869,9 +881,14 @@ body {
 }
 #fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .right-wrap .link_list {
   display: flex;
+  gap: 10px;
+}
+#fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .right-wrap .link_list :hover {
+  color: #ffffff;
+  background: #c871ff;
+  border-radius: 10px;
 }
 #fullpage #pj03 .inner .PJ03-cont .PJ03-cont_inner .right-wrap .link_list li {
-  margin-right: 10px;
   padding: 5px 15px;
   background: #ffffff;
   border-radius: 10px;
@@ -881,6 +898,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   color: #c871ff;
+  width: 100%;
 }
 #fullpage #pj04 {
   background: rgba(255, 255, 255, 0.1882352941);
@@ -921,7 +939,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-#fullpage #pj04 .inner .PJ04-cont .PJ04-cont_inner .left-wrap .mainScreen .portfolio {
+#fullpage #pj04 .inner .PJ04-cont .PJ04-cont_inner .left-wrap .mainScreen .megaZoo {
   overflow: hidden;
   width: 200%;
   height: 200%;
@@ -970,9 +988,14 @@ body {
 }
 #fullpage #pj04 .inner .PJ04-cont .PJ04-cont_inner .right-wrap .link_list {
   display: flex;
+  gap: 10px;
+}
+#fullpage #pj04 .inner .PJ04-cont .PJ04-cont_inner .right-wrap .link_list :hover {
+  color: #ffffff;
+  background: #c871ff;
+  border-radius: 10px;
 }
 #fullpage #pj04 .inner .PJ04-cont .PJ04-cont_inner .right-wrap .link_list li {
-  margin-right: 10px;
   padding: 5px 15px;
   background: #ffffff;
   border-radius: 10px;
@@ -982,6 +1005,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   color: #c871ff;
+  width: 100%;
 }
 #fullpage #Contact {
   height: 100vh;
