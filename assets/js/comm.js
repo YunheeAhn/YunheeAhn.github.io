@@ -100,8 +100,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     backMoving.to('#turn-RingPlanetLeft', {
-        x: 100,
         y: -100,
+        x: 100,
         rotate: -30,
         duration: 1,
     }, "-=0.5").to('#turn-RingPlanetLeft', {
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         y : -200,
         x : 450,
         scale : .6,
-        pin : 1,
+        pin : true,
         duration: 1,
     })
 });
